@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAFF — Premium Luxury Kitchen Appliances</title>
+  <meta name="description" content="Discover luxury kitchen appliances crafted for modern living. Italian gas hobs, convection ovens, silent chimneys, and french-door refrigerators.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header / Navigation
+       ========================================================================== -->
+  <header class="header">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="#home" class="logo">KAFF</a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Collections</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#about">Why KAFF</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#blog">Journal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Nav Actions (Icons) -->
+      <div class="nav-actions">
+        <button onclick="openOffersPopup()" style="background: var(--accent-gold); color: #0a0a0a; border: none; padding: 0.35rem 0.8rem; border-radius: 50px; font-size: 0.75rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.3rem; margin-right: 0.25rem;">
+          🔥 Offers
+        </button>
+
+        <button class="mobile-menu-btn" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <nav class="mobile-drawer">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Collections</a></li>
+      <li><a href="#featured">Featured Products</a></li>
+      <li><a href="#about">Why choose KAFF</a></li>
+      <li><a href="#gallery">Kitchen Inspiration</a></li>
+      <li><a href="#blog">Kitchen Journal</a></li>
+      <li><a href="#contact">Get In Touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- ==========================================================================
+       1. Hero Section
+       ========================================================================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <img src="images/hero-kitchen.png" alt="Luxury Kitchen Designer Studio" width="1920" height="1080">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-pre uppercase-tracking">Premium Kitchen Appliances</span>
+      <h1 class="hero-title" style="text-transform: uppercase; white-space: nowrap;">THE SIGNATURE OF <span style="font-family: inherit; font-style: normal; font-weight: inherit;">MODERN KITCHENS</span></h1>
+      <div class="hero-ctas" style="justify-content: center; align-items: center; margin-top: 2.5rem;">
+        <a href="#contact" class="btn" style="border-radius: 50px; padding: 1rem 2.5rem; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 0.15em; font-weight: 500; background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.2); box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); color: #fff; transition: all 0.3s ease;" onmouseover="this.style.background='rgba(255, 255, 255, 0.15)'; this.style.borderColor='rgba(255, 255, 255, 0.4)'" onmouseout="this.style.background='rgba(255, 255, 255, 0.08)'; this.style.borderColor='rgba(255, 255, 255, 0.2)'">Book an Appointment</a>
+      </div>
+    </div>
+
+
+    <div class="hero-fade-bottom"></div>
+  </section>
+
+  <!-- ==========================================================================
+       2. Product Collections (Categories)
+       ========================================================================== -->
+  <section id="products" class="section section-bg-dark">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Our Collections</h2>
+        <p>Explore our premium range of appliances, precision-engineered to integrate seamlessly into your culinary sanctuary.</p>
+      </div>
+
+      <div class="categories-grid" id="categoriesGrid">
+        <!-- Rendered dynamically by JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. Featured Products
+       ========================================================================== -->
+  <section id="featured" class="section section-bg-grey">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Featured Products</h2>
+        <p>Handpicked premium appliances that represent the pinnacle of KAFF's design philosophy and engineering excellence.</p>
+      </div>
+
+      <div class="filter-tabs scroll-reveal">
+        <button class="filter-tab active" data-filter="All">All Products</button>
+        <button class="filter-tab" data-filter="Ovens">Ovens</button>
+        <button class="filter-tab" data-filter="Chimneys">Chimneys</button>
+        <button class="filter-tab" data-filter="Hobs">Hobs</button>
+        <button class="filter-tab" data-filter="Dishwashers">Dishwashers</button>
+        <button class="filter-tab" data-filter="Refrigerators">Refrigerators</button>
+      </div>
+
+      <!-- Products Grid (rendered dynamically by JS) -->
+      <div class="products-grid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. Why Choose KAFF + Stats
+       ========================================================================== */ -->
+  <section id="about" class="section section-bg-dark">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Why Choose KAFF</h2>
+        <p>Every KAFF appliance is a statement of architectural elegance, engineered to deliver professional reliability.</p>
+      </div>
+
+      <div class="why-features-grid">
+        <!-- Feature 1 -->
+        <div class="why-card glass-card scroll-reveal" style="animation-delay: 0s;">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+          </div>
+          <h3>Premium Engineering</h3>
+          <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); font-weight: 600; opacity: 0.7;">European Precision × Indian Reliability</span>
+          <p>Every appliance is precision-engineered with high-grade European components, ensuring flawless operation that lasts decades.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="why-card glass-card scroll-reveal" style="animation-delay: 0.08s;">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>
+          </div>
+          <h3>Smart Integration</h3>
+          <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); font-weight: 600; opacity: 0.7;">IoT-Ready × Touchless Control</span>
+          <p>Wi-Fi connectivity, gesture controls, and auto-sensors bring intelligent, touchless automation directly into your daily cooking flow.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="why-card glass-card scroll-reveal" style="animation-delay: 0.16s;">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 22s13.5-3.5 16-11.5A13.88 13.88 0 0 0 15 2c0 0-11 2.5-13 13a22 22 0 0 0-1 7z"></path><path d="M9 12a14.76 14.76 0 0 0 4-4"></path></svg>
+          </div>
+          <h3>Eco-Efficiency</h3>
+          <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); font-weight: 600; opacity: 0.7;">A+++ Certified × Low Footprint</span>
+          <p>Industry-leading A+++ ratings across our range drastically reduce energy and water consumption without compromising power.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="why-card glass-card scroll-reveal" style="animation-delay: 0.24s;">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"></path></svg>
+          </div>
+          <h3>Elegant Design</h3>
+          <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); font-weight: 600; opacity: 0.7;">Minimal Form × Maximal Impact</span>
+          <p>Luxurious black glass finishes, brushed steel accents, and minimal form factors integrate flawlessly into any high-end interior.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="why-card glass-card scroll-reveal" style="animation-delay: 0.32s;">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Nationwide Support</h3>
+          <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); font-weight: 600; opacity: 0.7;">500+ Centers × Pan-India Reach</span>
+          <p>Over 500 authorized service centers across India with quick doorstep support — because client peace of mind is non-negotiable.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="why-card glass-card scroll-reveal" style="animation-delay: 0.4s;">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          </div>
+          <h3>Extended Warranties</h3>
+          <span style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: var(--accent-gold); font-weight: 600; opacity: 0.7;">Up to 10 Years × Zero Compromise</span>
+          <p>We stand firmly behind our engineering, offering up to 10 years of warranty coverage on compressors and select motor units.</p>
+        </div>
+      </div>
+
+      <!-- Stats Panel -->
+      <div class="stats-panel scroll-reveal">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number"><span class="stat-count-value" data-target="25">0</span>+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span class="stat-count-value" data-target="500">0</span>+</div>
+            <div class="stat-label">Products Designed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span class="stat-count-value" data-target="10">0</span>M+</div>
+            <div class="stat-label">Happy Families</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number"><span class="stat-count-value" data-target="150">0</span>+</div>
+            <div class="stat-label">Showrooms & Service</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. Kitchen Inspiration Gallery
+       ========================================================================== -->
+  <!-- ==========================================================================
+       5. Kitchen Inspiration Gallery (Dynamic & Custom)
+       ========================================================================== -->
+  <section id="gallery" class="section section-bg-grey">
+    <div class="container">
+      <div class="section-heading scroll-reveal" style="margin-bottom: 2.5rem;">
+        <div class="accent-line"></div>
+        <h2>Product Gallery</h2>
+        <p>Explore premium product showcases built and styled around integrated KAFF appliances.</p>
+      </div>
+
+      <div class="gallery-controls scroll-reveal" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; margin-bottom: 3rem; align-items: center;">
+        <button class="filter-tab active" data-gallery-filter="all" onclick="filterGallery('all', this)">All Images</button>
+        <button class="filter-tab" data-gallery-filter="products" onclick="filterGallery('products', this)">Product Photos</button>
+      </div>
+
+      <!-- Dynamic Gallery Grid -->
+      <div class="gallery-masonry scroll-reveal" id="dynamicGallery">
+        <!-- Loaded dynamically by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. Product Comparison
+       ========================================================================== -->
+  <section id="compare" class="section section-bg-grey">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Compare Appliances</h2>
+        <p>Compare specifications side-by-side to choose the appliance that aligns perfectly with your cooking style.</p>
+      </div>
+
+      <!-- Selectors -->
+      <div class="compare-selectors scroll-reveal">
+        <div>
+          <label for="compare-select-a">Appliance 1</label>
+          <select id="compare-select-a">
+            <!-- populated by JS -->
+          </select>
+        </div>
+        <div>
+          <label for="compare-select-b">Appliance 2</label>
+          <select id="compare-select-b">
+            <!-- populated by JS -->
+          </select>
+        </div>
+      </div>
+
+      <!-- Comparison Matrix -->
+      <div class="compare-table glass-card scroll-reveal" id="compare-table-container" style="display: none;">
+        <div class="compare-header">
+          <div>Specifications</div>
+          <div id="compare-header-a">Model A</div>
+          <div id="compare-header-b">Model B</div>
+        </div>
+        <div class="compare-table-body">
+          <!-- populated dynamically by JS -->
+        </div>
+      </div>
+
+      <!-- Compare Placeholder -->
+      <div id="compare-placeholder" class="glass-card scroll-reveal" style="text-align: center; padding: 4rem 2rem; color: #8a8a8a; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px;">
+        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" style="width: 48px; height: 48px; stroke: var(--accent-gold); margin: 0 auto 1.5rem; display: block;">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+        </svg>
+        <h3 style="color: #fff; margin-bottom: 0.5rem; font-family: 'Poppins', sans-serif; font-size: 1.1rem; font-weight: 600;">Select Appliances to Compare</h3>
+        <p style="margin: 0; font-size: 0.8rem; max-width: 340px; margin: 0 auto; line-height: 1.5;">Choose two kitchen appliances from the dropdowns above to compare their pricing, size, power consumption, and energy ratings side-by-side.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. Testimonials
+       ========================================================================== -->
+  <section id="testimonials" class="section section-bg-dark">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>What Our Owners Say</h2>
+        <p>Read honest feedback from culinary enthusiasts and homeowners who trust KAFF appliances daily.</p>
+      </div>
+
+      <div class="testimonials-container scroll-reveal">
+        <!-- Slider Track -->
+        <div class="testimonials-track">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="testimonial-controls">
+          <button class="testimonial-btn prev" aria-label="Previous Testimonial">&larr;</button>
+          <button class="testimonial-btn next" aria-label="Next Testimonial">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. Our Store Location
+       ========================================================================== -->
+  <section id="dealers" class="section section-bg-grey">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Our Store</h2>
+        <p>Visit our authorized KAFF gallery and experience premium kitchen appliances firsthand.</p>
+      </div>
+
+      <div class="dealers-layout">
+        <!-- Left: Single Store Info -->
+        <div class="dealers-panel glass-card scroll-reveal" style="display: flex; flex-direction: column; justify-content: center;">
+          <div class="dealer-item" style="border-left: 3px solid var(--accent-gold); margin: 0;">
+            <div class="dealer-header">
+              <h4>KAFF Kitchen Appliances</h4>
+              <span class="dealer-distance" style="background: var(--accent-gold); color: #000; font-weight: 700;">Flagship</span>
+            </div>
+            <p style="line-height: 1.6;">R.T.O Office, near Jani Masjid, Kondapur, Hanuman Nagar, Besides, Gachibowli, Hyderabad, Telangana 500084</p>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.75rem;">
+              <a href="https://maps.app.goo.gl/9Vee6S2ZixDAgovJA" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.65rem 1.25rem; border-radius: 12px; font-size: 0.85rem; width: fit-content; text-decoration: none;">
+                <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Get Directions
+              </a>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem; padding: 1rem; background: rgba(212,175,55,0.06); border: 1px solid rgba(212,175,55,0.15); border-radius: 12px;">
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; stroke: var(--accent-gold); fill: none; stroke-width: 2;"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span style="color: var(--accent-gold); font-weight: 600; font-size: 0.8rem; letter-spacing: 0.05em;">VISITING HOURS</span>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.8rem; line-height: 1.6; margin: 0;">Monday – Saturday: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</p>
+          </div>
+        </div>
+
+        <!-- Right: Embedded Google Map -->
+        <a href="https://maps.app.goo.gl/9Vee6S2ZixDAgovJA" target="_blank" rel="noopener noreferrer" class="dealers-map-panel scroll-reveal" style="display: block; text-decoration: none; position: relative; overflow: hidden; min-height: 380px; padding: 0; cursor: pointer;">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3!2d78.3553!3d17.4611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93001c5f7813%3A0x24c98b9ee9383001!2sKAFF+Kitchen+appliances!5e0!3m2!1sen!2sin!4v1717130000000"
+            width="100%"
+            height="100%"
+            style="border: 0; position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 16px; pointer-events: none;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div style="position: absolute; inset: 0; z-index: 2; background: transparent;"></div>
+          <div style="position: absolute; inset: 0; z-index: 5; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 1.25rem; background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 40%);">
+            <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-gold); color: #000; font-weight: 700; font-size: 0.8rem; padding: 0.5rem 1.25rem; border-radius: 20px; letter-spacing: 0.03em; font-family: var(--font-product);">
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.5;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Open in Google Maps
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. Service & Support
+       ========================================================================== -->
+  <section id="service" class="section section-bg-dark">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Service & Support</h2>
+        <p>Premium care for your kitchen masterpieces. We are committed to providing seamless maintenance and installation services.</p>
+      </div>
+
+      <div class="service-grid">
+        <!-- Service 1 -->
+        <div class="service-card glass-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
+          </div>
+          <h3>Product Registration</h3>
+          <p>Register your new KAFF purchase to secure product updates, download guides, and activate customer service portals.</p>
+          <a href="#contact" class="service-link">Register Appliance</a>
+          <a href="https://wa.me/911800123456?text=Hi,%20I%20would%20like%20to%20register%20my%20KAFF%20appliance." target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn" aria-label="Chat on WhatsApp about Product Registration">
+            <svg viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.761.459 3.473 1.332 4.978L2 22l5.222-1.311c1.455.795 3.09 1.215 4.778 1.215 5.506 0 9.988-4.482 9.988-9.988 0-5.506-4.482-9.988-9.988-9.988zm5.292 13.978c-.227.639-1.121 1.181-1.748 1.285-.53.088-1.218.106-1.97-.193-3.007-1.196-4.945-4.248-5.095-4.449-.15-.201-1.214-1.614-1.214-3.078 0-1.464.767-2.183 1.04-2.476.273-.293.593-.366.791-.366.198 0 .396.002.568.01.182.008.426-.069.664.502.247.594.843 2.057.917 2.206.074.148.124.321.025.519-.099.198-.148.321-.297.494-.148.173-.313.387-.446.519-.148.148-.305.309-.132.606.173.297.768 1.266 1.65 2.05.132.115.289.219.467.297.231.101.442.062.606-.132.182-.218.791-.917.999-1.233.208-.317.416-.264.7-.156.285.109 1.808.852 2.121 1.009.313.156.52.235.594.364.074.129.074.747-.153 1.386z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card glass-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+          </div>
+          <h3>Warranty Activation</h3>
+          <p>Activate your manufacturer warranty or purchase extended protection plans to safeguard your kitchen investment.</p>
+          <a href="#contact" class="service-link">Activate Warranty</a>
+          <a href="https://wa.me/911800123456?text=Hi,%20I%20would%20like%20to%20activate%20my%20KAFF%20appliance%20warranty." target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn" aria-label="Chat on WhatsApp about Warranty Activation">
+            <svg viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.761.459 3.473 1.332 4.978L2 22l5.222-1.311c1.455.795 3.09 1.215 4.778 1.215 5.506 0 9.988-4.482 9.988-9.988 0-5.506-4.482-9.988-9.988-9.988zm5.292 13.978c-.227.639-1.121 1.181-1.748 1.285-.53.088-1.218.106-1.97-.193-3.007-1.196-4.945-4.248-5.095-4.449-.15-.201-1.214-1.614-1.214-3.078 0-1.464.767-2.183 1.04-2.476.273-.293.593-.366.791-.366.198 0 .396.002.568.01.182.008.426-.069.664.502.247.594.843 2.057.917 2.206.074.148.124.321.025.519-.099.198-.148.321-.297.494-.148.173-.313.387-.446.519-.148.148-.305.309-.132.606.173.297.768 1.266 1.65 2.05.132.115.289.219.467.297.231.101.442.062.606-.132.182-.218.791-.917.999-1.233.208-.317.416-.264.7-.156.285.109 1.808.852 2.121 1.009.313.156.52.235.594.364.074.129.074.747-.153 1.386z"/></svg>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card glass-card scroll-reveal">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+          </div>
+          <h3>Technician Booking</h3>
+          <p>Schedule a visit from certified KAFF technicians for expert appliance maintenance, diagnostic tests, or repair requests.</p>
+          <a href="#contact" class="service-link">Book Technician</a>
+          <a href="https://wa.me/911800123456?text=Hi,%20I%20would%20like%20to%20book%20a%20technician%20for%20my%20KAFF%20appliance." target="_blank" rel="noopener noreferrer" class="service-whatsapp-btn" aria-label="Chat on WhatsApp about Technician Booking">
+            <svg viewBox="0 0 24 24"><path d="M12.012 2c-5.506 0-9.988 4.482-9.988 9.988 0 1.761.459 3.473 1.332 4.978L2 22l5.222-1.311c1.455.795 3.09 1.215 4.778 1.215 5.506 0 9.988-4.482 9.988-9.988 0-5.506-4.482-9.988-9.988-9.988zm5.292 13.978c-.227.639-1.121 1.181-1.748 1.285-.53.088-1.218.106-1.97-.193-3.007-1.196-4.945-4.248-5.095-4.449-.15-.201-1.214-1.614-1.214-3.078 0-1.464.767-2.183 1.04-2.476.273-.293.593-.366.791-.366.198 0 .396.002.568.01.182.008.426-.069.664.502.247.594.843 2.057.917 2.206.074.148.124.321.025.519-.099.198-.148.321-.297.494-.148.173-.313.387-.446.519-.148.148-.305.309-.132.606.173.297.768 1.266 1.65 2.05.132.115.289.219.467.297.231.101.442.062.606-.132.182-.218.791-.917.999-1.233.208-.317.416-.264.7-.156.285.109 1.808.852 2.121 1.009.313.156.52.235.594.364.074.129.074.747-.153 1.386z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       11. Blog Highlights (Journal)
+       ========================================================================== -->
+  <section id="blog" class="section section-bg-grey">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Kitchen Journal</h2>
+        <p>Stay updated with curated interior layout advice, appliance selection guides, and smart automation ideas.</p>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Article 1 -->
+        <a href="https://www.kaff.in/blog" target="_blank" rel="noopener noreferrer" class="blog-card scroll-reveal" style="cursor: pointer; text-decoration: none; display: block;">
+          <div class="blog-img-wrapper">
+            <img src="images/journal-1.png" alt="10 Luxury Layout Design Ideas for Modular Kitchens">
+            <div class="blog-card-gradient"></div>
+          </div>
+          <div class="blog-body">
+            <div>
+              <span class="blog-category">Kitchen Design</span>
+              <h3>10 Luxury Layout Design Ideas for Modular Kitchens</h3>
+              <p>Discover how to integrate built-in chimneys and oven towers to optimize space while maintaining architectural aesthetics.</p>
+            </div>
+            <div class="blog-footer">
+              <span>May 15, 2026</span>
+              <span>⏱ 6 min read</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Article 2 -->
+        <a href="https://www.kaff.in/blog" target="_blank" rel="noopener noreferrer" class="blog-card scroll-reveal" style="cursor: pointer; text-decoration: none; display: block;">
+          <div class="blog-img-wrapper">
+            <img src="images/journal-2.png" alt="Built-in Ovens vs. Microwaves: The Ultimate Setup">
+            <div class="blog-card-gradient" style="background: linear-gradient(135deg, rgba(192, 192, 192, 0.12) 0%, rgba(28, 28, 28, 0.9) 100%);"></div>
+          </div>
+          <div class="blog-body">
+            <div>
+              <span class="blog-category">Appliance Guide</span>
+              <h3>Built-in Ovens vs. Microwaves: The Ultimate Setup</h3>
+              <p>Learn how to select capacities, cooking modes, and energy ratings for your family baking and grilling requirements.</p>
+            </div>
+            <div class="blog-footer">
+              <span>May 02, 2026</span>
+              <span>⏱ 8 min read</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       12. Contact Section
+       ========================================================================== -->
+  <section id="contact" class="section section-bg-dark">
+    <div class="container">
+      <div class="section-heading scroll-reveal">
+        <div class="accent-line"></div>
+        <h2>Get In Touch</h2>
+        <p>Book a private consultation with our kitchen planners or get quick support from service representatives.</p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Form -->
+        <div class="contact-form-panel glass-card scroll-reveal" style="padding: 3rem 2.5rem; text-align: center; max-width: 460px; margin: 0 auto; width: 100%;">
+          <!-- Centered Contact Man Logo -->
+          <div class="contact-avatar-wrapper" style="margin: 0 auto 1.5rem; width: 64px; height: 64px; border-radius: 50%; background: rgba(212, 175, 55, 0.08); border: 1.5px solid var(--accent-gold); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(212, 175, 55, 0.15);">
+            <svg viewBox="0 0 24 24" style="width: 32px; height: 32px; fill: none; stroke: var(--accent-gold); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round;">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+          
+          <h3 style="margin-bottom: 1.75rem; font-family: 'Poppins', sans-serif; font-size: 1.35rem; font-weight: 700; color: #fff; letter-spacing: 0.02em;">Send Us A Message</h3>
+          
+          <form id="contact-form" style="text-align: left; width: 100%;">
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label for="c-name" style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.4rem; font-weight: 600; letter-spacing: 0.05em;">Name</label>
+              <input type="text" id="c-name" placeholder="Your Name" style="width: 100%;" required>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label for="c-phone" style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.4rem; font-weight: 600; letter-spacing: 0.05em;">Number</label>
+              <input type="tel" id="c-phone" placeholder="+91 XXXXX XXXXX" style="width: 100%;" required>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label for="c-email" style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.4rem; font-weight: 600; letter-spacing: 0.05em;">Email</label>
+              <input type="email" id="c-email" placeholder="you@domain.com" style="width: 100%;" required>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label for="c-subject" style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.4rem; font-weight: 600; letter-spacing: 0.05em;">Type of Enquiry</label>
+              <select id="c-subject" style="width: 100%; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 0.85rem 1rem; color: #fff; font-size: 0.85rem;">
+                <option value="Consultation" style="background: #141414;">Design Consultation</option>
+                <option value="Product" style="background: #141414;">Product Details</option>
+                <option value="Service" style="background: #141414;">Service Booking</option>
+                <option value="Warranty" style="background: #141414;">Warranty Claims</option>
+              </select>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 1.5rem;">
+              <label for="c-msg" style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.4rem; font-weight: 600; letter-spacing: 0.05em;">Message</label>
+              <textarea id="c-msg" rows="4" placeholder="Tell us about your kitchen requirements..." style="width: 100%;" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem; border-radius: 50px; font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em;">Send Enquiry</button>
+          </form>
+        </div>
+
+        <!-- Info details -->
+        <div class="contact-info-panel scroll-reveal">
+          <div class="contact-info-card glass-card">
+            <h3>Flagship Showroom</h3>
+            
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="info-details">
+                <h4>Address</h4>
+                <a href="https://maps.app.goo.gl/9Vee6S2ZixDAgovJA" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">
+                  <p>R.T.O Office, near Jani Masjid, Kondapur, Hanuman Nagar, Gachibowli, Hyderabad, Telangana 500084</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="info-details">
+                <h4>Helpline</h4>
+                <a href="tel:+911800123456">+91 1800-123-456 (Toll Free)</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="info-details">
+                <h4>Support Email</h4>
+                <a href="mailto:info@kaff.in">info@kaff.in</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Chat button -->
+          <a href="https://wa.me/911800123456" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="display: flex; gap: 0.75rem; border-radius: 20px; padding: 1.25rem; align-items: center; justify-content: center;">
+            <svg viewBox="0 0 24 24" style="width: 20px; height: 20px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> Chat with us on WhatsApp
+          </a>
+
+          <!-- Interactive map widget -->
+          <a href="https://maps.app.goo.gl/9Vee6S2ZixDAgovJA" target="_blank" rel="noopener noreferrer" class="contact-map-placeholder scroll-reveal" style="display: block; text-decoration: none; position: relative; overflow: hidden; padding: 0; cursor: pointer; border-radius: 30px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.3!2d78.3553!3d17.4611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93001c5f7813%3A0x24c98b9ee9383001!2sKAFF+Kitchen+appliances!5e0!3m2!1sen!2sin!4v1717130000000"
+              width="100%"
+              height="100%"
+              style="border: 0; position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 30px; pointer-events: none;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <div style="position: absolute; inset: 0; z-index: 2; background: transparent;"></div>
+            <div style="position: absolute; inset: 0; z-index: 5; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 1rem; background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 40%);">
+              <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-gold); color: #000; font-weight: 700; font-size: 0.75rem; padding: 0.4rem 1rem; border-radius: 20px; letter-spacing: 0.03em;">
+                <svg viewBox="0 0 24 24" style="width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 2.5;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Open Map Location
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       13. Footer
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <h3 class="text-gold">KAFF</h3>
+          <p>Redefining Kitchen Excellence Since 1998. Italian design and German engineering for premium home culinary spaces.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="social-link" aria-label="Facebook">FB</a>
+            <a href="#" class="social-link" aria-label="Twitter">TW</a>
+            <a href="#" class="social-link" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+
+        <!-- Links 1 -->
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#products">Built-in Ovens</a></li>
+            <li><a href="#products">Gas Hobs & Cooktops</a></li>
+            <li><a href="#products">Silent Chimneys</a></li>
+            <li><a href="#products">Premium Dishwashers</a></li>
+            <li><a href="#products">French-door Fridges</a></li>
+          </ul>
+        </div>
+
+        <!-- Links 2 -->
+        <div class="footer-col">
+          <h4>Support & Service</h4>
+          <ul>
+            <li><a href="#service">Appliance Registration</a></li>
+            <li><a href="#service">Extended Warranty</a></li>
+            <li><a href="#service">Book technician</a></li>
+            <li><a href="#dealers">Store Locator</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact details -->
+        <div class="footer-col">
+          <h4>Flagship Showroom</h4>
+          <ul class="contact-info">
+            <li>
+              <a href="https://maps.app.goo.gl/9Vee6S2ZixDAgovJA" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s ease;">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; flex-shrink: 0;">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Kondapur, Hyderabad, India</span>
+              </a>
+            </li>
+            <li>
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+              <span>+91 1800-123-456</span>
+            </li>
+            <li>
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <span>info@kaff.in</span>
+            </li>
+          </ul>
+          <div style="margin-top: 1rem;">
+            <button onclick="openManagementPopup()" style="background: transparent; color: var(--accent-gold); border: 1px solid var(--accent-gold); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.75rem; font-weight: bold; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.4rem;">
+              ⚙️ Management Portal
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="footer-newsletter">
+        <div class="newsletter-flex">
+          <div class="newsletter-text">
+            <h4>Join Our Exclusive Newsletter</h4>
+            <p>Get catalog updates, private invitations, and kitchen design ideas directly in your inbox.</p>
+          </div>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" placeholder="Your Email Address" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 KAFF Appliances. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Popup Modal -->
+  <div class="product-popup-overlay" id="productPopup">
+    <div class="product-popup">
+      <button class="product-popup-close" onclick="closeProductPopup()">&times;</button>
+      <div class="product-popup-image">
+        <span class="product-popup-badge" id="popupBadge"></span>
+        <img id="popupImage" src="" alt="">
+      </div>
+      <div class="product-popup-body">
+        <div class="product-popup-category" id="popupCategory"></div>
+        <h3 id="popupName"></h3>
+        <p class="product-popup-desc" id="popupDesc"></p>
+        <ul class="product-popup-features" id="popupFeatures"></ul>
+        <div class="product-popup-price-row">
+          <span class="product-popup-price" id="popupPrice"></span>
+          <span class="product-popup-original-price" id="popupOriginalPrice"></span>
+          <span class="product-popup-discount" id="popupDiscount"></span>
+        </div>
+        <div class="product-popup-actions">
+          <a class="btn-popup-whatsapp" id="popupWhatsapp" href="#" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+            Chat on WhatsApp
+          </a>
+          <a class="btn-popup-cart" id="popupViewDetails" href="#" style="background: rgba(255, 255, 255, 0.08); color: #fff; border: 1px solid rgba(255, 255, 255, 0.1); text-align: center; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">Specs Page</a>
+          <button class="btn-popup-cart" onclick="closeProductPopup()">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unified Management Portal Modal -->
+  <div class="product-popup-overlay" id="unifiedManagementPopup">
+    <div class="product-popup" style="max-width: 460px;">
+      <button class="product-popup-close" onclick="closeManagementPopup()">&times;</button>
+      <div class="product-popup-body" style="padding: 1.25rem;">
+        <h3 style="font-family: 'Poppins', sans-serif; font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          ⚙️ Management Portal
+        </h3>
+
+        <!-- Reset PIN Button -->
+        <div style="margin-bottom: 1rem; text-align: right;">
+          <button type="button" onclick="resetAdminPin()" style="background: transparent; border: 1px solid rgba(255,255,255,0.1); color: #8a8a8a; padding: 0.35rem 0.75rem; border-radius: 8px; font-size: 0.7rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; display: inline-flex; align-items: center; gap: 0.3rem;" onmouseover="this.style.borderColor='var(--accent-gold)'; this.style.color='var(--accent-gold)';" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'; this.style.color='#8a8a8a';">
+            🔑 Reset PIN
+          </button>
+        </div>
+
+        <!-- Selection of domain -->
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.3rem; font-weight: 600; letter-spacing: 0.05em;">Domain / Action</label>
+          <select id="mgmt-domain-select" onchange="switchManagementDomain(this.value)" style="width: 100%; background: #1c1c1c; border: 1px solid var(--accent-gold); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem; font-weight: bold; cursor: pointer;">
+            <option value="collection">📁 Create New Collection</option>
+            <option value="product" selected>🍳 Add Product / Appliance</option>
+            <option value="gallery">🖼️ Add Gallery Image</option>
+          </select>
+        </div>
+
+        <!-- 1. Collection Form -->
+        <div id="mgmt-form-collection" style="display: none;">
+          <form id="add-collection-form" onsubmit="saveCustomCollection(event)">
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Collection Name</label>
+              <input type="text" id="ac-name" placeholder="e.g. Wine Coolers" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Icon SVG</label>
+              <input type="text" id="ac-icon" placeholder="e.g. <svg>...</svg>" value="<svg viewBox=&quot;0 0 24 24&quot;><circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;8&quot; fill=&quot;currentColor&quot;/&gt;</svg>" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Appliances Count</label>
+              <input type="number" id="ac-count" placeholder="e.g. 12" value="0" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Cover Image (Optional)</label>
+              <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                <input type="file" id="ac-image-file" accept="image/*" style="font-size: 0.75rem; color: #8a8a8a; border: 1px dashed rgba(255,255,255,0.1); padding: 0.4rem; border-radius: 8px; cursor: pointer;" onchange="handleCollectionImageUpload(event)">
+              </div>
+              <div id="ac-image-preview-container" style="display: none; margin-top: 0.5rem; text-align: center;">
+                <img id="ac-image-preview" src="" style="max-height: 60px; max-width: 100%; object-fit: contain; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); padding: 0.2rem; background: #0a0a0a;" alt="Preview">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem; border-radius: 12px; font-weight: 700; font-size: 0.85rem;">Save Collection</button>
+          </form>
+        </div>
+
+        <!-- 2. Product Form -->
+        <div id="mgmt-form-product" style="display: block;">
+          <!-- Scanner Section -->
+          <div id="scanner-section" style="margin-bottom: 1rem;">
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.6rem;">
+              <button type="button" id="btn-scan-camera" onclick="startScannerCamera()" style="flex:1; display:flex; align-items:center; justify-content:center; gap:0.4rem; padding:0.55rem 0.75rem; background:transparent; border:1px dashed var(--accent-gold); color:var(--accent-gold); border-radius:10px; font-size:0.75rem; font-weight:600; cursor:pointer; transition:all 0.3s ease;">
+                <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+                Scan with Camera
+              </button>
+              <button type="button" id="btn-scan-file" onclick="document.getElementById('scanner-file-input').click()" style="flex:1; display:flex; align-items:center; justify-content:center; gap:0.4rem; padding:0.55rem 0.75rem; background:transparent; border:1px dashed rgba(255,255,255,0.15); color:#8a8a8a; border-radius:10px; font-size:0.75rem; font-weight:600; cursor:pointer; transition:all 0.3s ease;">
+                <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                Scan from Photo
+              </button>
+              <input type="file" id="scanner-file-input" accept="image/*" style="display:none;" onchange="scanFromFile(event)">
+            </div>
+
+            <!-- Camera viewfinder -->
+            <div id="scanner-viewfinder" style="display:none; position:relative; border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); margin-bottom:0.6rem; background:#000;">
+              <video id="scanner-video" autoplay playsinline style="width:100%; height:180px; object-fit:cover; display:block;"></video>
+              <canvas id="scanner-canvas" style="display:none;"></canvas>
+              <!-- Scan frame overlay -->
+              <div style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center; pointer-events:none;">
+                <div style="width:80%; height:70%; border:2px dashed var(--accent-gold); border-radius:8px; opacity:0.5;"></div>
+              </div>
+              <div style="position:absolute; bottom:0.5rem; left:0; right:0; display:flex; justify-content:center; gap:0.5rem;">
+                <button type="button" onclick="captureAndScan()" style="padding:0.45rem 1.2rem; background:var(--accent-gold); color:#0a0a0a; border:none; border-radius:8px; font-size:0.75rem; font-weight:700; cursor:pointer;">📸 Capture & Scan</button>
+                <button type="button" onclick="stopScannerCamera()" style="padding:0.45rem 0.8rem; background:rgba(255,255,255,0.1); color:#fff; border:1px solid rgba(255,255,255,0.15); border-radius:8px; font-size:0.75rem; font-weight:600; cursor:pointer;">Cancel</button>
+              </div>
+            </div>
+
+            <!-- Scanner progress -->
+            <div id="scanner-progress" style="display:none; text-align:center; padding:0.75rem; border:1px solid rgba(255,255,255,0.06); border-radius:10px; background:rgba(212,175,55,0.04);">
+              <div style="display:flex; align-items:center; justify-content:center; gap:0.5rem; margin-bottom:0.4rem;">
+                <div id="scanner-spinner" style="width:16px; height:16px; border:2px solid rgba(212,175,55,0.3); border-top-color:var(--accent-gold); border-radius:50%; animation:spin 0.8s linear infinite;"></div>
+                <span id="scanner-status" style="font-size:0.75rem; color:var(--accent-gold); font-weight:600;">Scanning product info...</span>
+              </div>
+              <div style="width:100%; height:3px; background:rgba(255,255,255,0.06); border-radius:2px; overflow:hidden;">
+                <div id="scanner-bar" style="width:0%; height:100%; background:var(--accent-gold); border-radius:2px; transition:width 0.3s ease;"></div>
+              </div>
+            </div>
+
+            <!-- Scanned text preview -->
+            <div id="scanner-result" style="display:none; margin-top:0.5rem;">
+              <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.3rem;">
+                <span style="font-size:0.65rem; text-transform:uppercase; color:var(--accent-gold); font-weight:600; letter-spacing:0.05em;">✅ Scanned Text</span>
+                <button type="button" onclick="document.getElementById('scanner-result').style.display='none'" style="background:none; border:none; color:#555; cursor:pointer; font-size:0.8rem;">&times;</button>
+              </div>
+              <pre id="scanner-raw-text" style="max-height:80px; overflow-y:auto; font-size:0.65rem; color:#888; background:#111; border:1px solid rgba(255,255,255,0.05); border-radius:8px; padding:0.5rem; white-space:pre-wrap; word-break:break-word; margin:0;"></pre>
+              <button type="button" id="btn-scanner-done" onclick="finishScanningAndAutoFill()" style="margin-top: 0.5rem; width: 100%; padding: 0.55rem 0.8rem; background: var(--accent-gold); color: #0a0a0a; border: none; border-radius: 8px; font-size: 0.75rem; font-weight: 700; cursor: pointer; transition: all 0.3s ease; display: block;">Done (Auto-Fill Details)</button>
+            </div>
+          </div>
+
+          <form id="add-product-form" onsubmit="saveCustomProduct(event)">
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Category / Domain</label>
+              <select id="ap-category" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+                <option value="Ovens">Built-in Ovens</option>
+                <option value="Hobs">Hobs & Cooktops</option>
+                <option value="Chimneys">Chimney Hoods</option>
+                <option value="Dishwashers">Dishwashers</option>
+                <option value="Microwaves">Microwaves</option>
+                <option value="Refrigerators">Refrigerators</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Product Name</label>
+              <input type="text" id="ap-name" placeholder="e.g. KAFF KB 25 Convection Oven" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Description</label>
+              <textarea id="ap-desc" rows="2" placeholder="Explain product features..." style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem; resize: none;" required></textarea>
+            </div>
+            <div class="form-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+              <div class="form-group">
+                <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Original Price (₹)</label>
+                <input type="number" id="ap-originalPrice" placeholder="e.g. 45000" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+              </div>
+              <div class="form-group">
+                <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Offer Price (₹)</label>
+                <input type="number" id="ap-price" placeholder="e.g. 35990" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+              </div>
+            </div>
+
+            <!-- Specifications Section -->
+            <div style="margin-bottom: 0.75rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.06);">
+              <span style="display: block; font-size: 0.65rem; text-transform: uppercase; color: var(--accent-gold); margin-bottom: 0.5rem; font-weight: 700; letter-spacing: 0.08em;">Specifications</span>
+              <div class="form-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 0.6rem;">
+                <div class="form-group">
+                  <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Capacity / Size</label>
+                  <input type="text" id="ap-capacity" placeholder="e.g. 73 Litres" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;">
+                </div>
+                <div class="form-group">
+                  <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Power Consumption</label>
+                  <input type="text" id="ap-power" placeholder="e.g. 2200W" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;">
+                </div>
+              </div>
+              <div class="form-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; margin-bottom: 0.6rem;">
+                <div class="form-group">
+                  <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Dimensions</label>
+                  <input type="text" id="ap-dimensions" placeholder="e.g. 595×595×560 mm" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;">
+                </div>
+                <div class="form-group">
+                  <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Material Finish</label>
+                  <input type="text" id="ap-finish" placeholder="e.g. Stainless Steel" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;">
+                </div>
+              </div>
+              <div class="form-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem;">
+                <div class="form-group">
+                  <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Warranty Duration</label>
+                  <input type="text" id="ap-warranty" placeholder="e.g. 2 Years" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;">
+                </div>
+                <div class="form-group">
+                  <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Energy Rating</label>
+                  <select id="ap-energy" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;">
+                    <option value="">Select rating</option>
+                    <option value="A+++">A+++</option>
+                    <option value="A++">A++</option>
+                    <option value="A+">A+</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Product Photo</label>
+              <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                <input type="file" id="ap-image-file" accept="image/*" style="font-size: 0.75rem; color: #8a8a8a; border: 1px dashed rgba(255,255,255,0.1); padding: 0.4rem; border-radius: 8px; cursor: pointer;" onchange="handleImageUpload(event)">
+                <div style="text-align: center; color: #444; font-size: 0.7rem; font-weight: bold;">— OR —</div>
+                <input type="text" id="ap-image-url" placeholder="Paste image URL (e.g., images/oven.png)" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;">
+              </div>
+              <div id="ap-image-preview-container" style="display: none; margin-top: 0.5rem; text-align: center;">
+                <img id="ap-image-preview" src="" style="max-height: 60px; max-width: 100%; object-fit: contain; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); padding: 0.2rem; background: #0a0a0a;" alt="Preview">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem; border-radius: 12px; font-weight: 700; font-size: 0.85rem;">Save Product</button>
+          </form>
+        </div>
+
+        <!-- 3. Gallery Form -->
+        <div id="mgmt-form-gallery" style="display: none;">
+          <form id="add-gallery-form" onsubmit="saveGalleryImage(event)">
+            <div class="form-group" style="margin-bottom: 0.75rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Image Title / Caption</label>
+              <input type="text" id="ag-title" placeholder="e.g., Modern Italian Kitchen Setup" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+            </div>
+            <div class="form-group" style="margin-bottom: 1rem;">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Upload Photo</label>
+              <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+                <input type="file" id="ag-image-file" accept="image/*" style="font-size: 0.75rem; color: #8a8a8a; border: 1px dashed rgba(255,255,255,0.1); padding: 0.4rem; border-radius: 8px; cursor: pointer;" onchange="handleGalleryImageUpload(event)" required>
+              </div>
+              <div id="ag-image-preview-container" style="display: none; margin-top: 0.5rem; text-align: center;">
+                <img id="ag-image-preview" src="" style="max-height: 100px; max-width: 100%; object-fit: contain; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); padding: 0.2rem; background: #0a0a0a;" alt="Preview">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem; border-radius: 12px; font-weight: 700; font-size: 0.85rem;">Save Gallery Image</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Offers Popup Modal -->
+  <div class="product-popup-overlay" id="offersPopup">
+    <div class="product-popup" style="max-width: 500px;">
+      <button class="product-popup-close" onclick="closeOffersPopup()">&times;</button>
+      <div class="product-popup-body" style="padding: 1.25rem;">
+        <h3 style="font-family: 'Poppins', sans-serif; font-size: 1.15rem; font-weight: 700; color: #fff; margin-bottom: 1rem; border-bottom: 1px solid rgba(255,255,255,0.06); padding-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+          🔥 Active Offers
+        </h3>
+
+        <!-- Offers Grid/List -->
+        <div id="offers-list-container" style="display: flex; flex-direction: column; gap: 0.75rem; max-height: 250px; overflow-y: auto; margin-bottom: 1.5rem; padding-right: 0.25rem;">
+          <!-- Populated by JS -->
+        </div>
+
+        <h3 style="font-family: 'Poppins', sans-serif; font-size: 1rem; font-weight: 700; color: #fff; margin-bottom: 0.75rem; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1rem;">
+          ⚡ Upload New Offer
+        </h3>
+
+        <form id="add-offer-form" onsubmit="saveOffer(event)">
+          <div class="form-group" style="margin-bottom: 0.75rem;">
+            <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Offer Name / Title</label>
+            <input type="text" id="off-name" placeholder="e.g. Monsoon Special 20% Off" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+          </div>
+          <div class="form-grid-2col" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+            <div class="form-group">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Offer Price (₹)</label>
+              <input type="number" id="off-price" placeholder="e.g. 29990" style="width: 100%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+            </div>
+            <div class="form-group">
+              <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Validity / Duration</label>
+              <div style="display: flex; gap: 0.4rem;">
+                <input type="number" id="off-duration" placeholder="e.g. 24" style="width: 60%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+                <select id="off-duration-unit" style="width: 40%; background: #1c1c1c; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem; font-weight: bold;">
+                  <option value="hours">Hrs</option>
+                  <option value="days">Days</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.25rem;">
+            <label style="display: block; font-size: 0.65rem; text-transform: uppercase; color: #8a8a8a; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Offer Photo</label>
+            <div style="display: flex; flex-direction: column; gap: 0.4rem;">
+              <input type="file" id="off-image-file" accept="image/*" style="font-size: 0.75rem; color: #8a8a8a; border: 1px dashed rgba(255,255,255,0.1); padding: 0.4rem; border-radius: 8px; cursor: pointer;" onchange="handleOfferImageUpload(event)" required>
+            </div>
+            <div id="off-image-preview-container" style="display: none; margin-top: 0.5rem; text-align: center;">
+              <img id="off-image-preview" src="" style="max-height: 80px; max-width: 100%; object-fit: contain; border-radius: 6px; border: 1px solid rgba(255,255,255,0.05); padding: 0.2rem; background: #0a0a0a;" alt="Preview">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.75rem; border-radius: 12px; font-weight: 700; font-size: 0.85rem;">Upload Offer</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Journal Popup Modal -->
+  <div class="product-popup-overlay" id="journalPopup">
+    <div class="product-popup" style="max-width: 650px;">
+      <button class="product-popup-close" onclick="closeJournalPopup()">&times;</button>
+      <div class="product-popup-image" style="height: 320px; padding: 0;">
+        <img id="journalPopupImage" src="" alt="" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <div class="product-popup-body" style="padding: 2.25rem;">
+        <div class="product-popup-category" id="journalPopupCategory" style="margin-bottom: 0.75rem;"></div>
+        <h3 id="journalPopupTitle" style="font-size: 1.6rem; margin-bottom: 1.25rem; line-height: 1.4; color: #fff;"></h3>
+        <div id="journalPopupContent" style="font-size: 0.9rem; color: #a0a0a0; line-height: 1.8; margin-bottom: 1.5rem;"></div>
+        <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 1.25rem; display: flex; justify-content: space-between; align-items: center; font-size: 0.75rem; color: #555;">
+          <span id="journalPopupDate"></span>
+          <span id="journalPopupReadTime" style="color: var(--accent-gold); font-weight: 600;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

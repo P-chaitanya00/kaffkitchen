@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAFF — Appliance Details</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Unique styling for Product Details Page to look extremely premium */
+    .product-detail-section {
+      padding: 8rem 0 4rem;
+    }
+    .detail-layout {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      margin-bottom: 5rem;
+    }
+    @media (min-width: 768px) {
+      .detail-layout {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
+    .detail-gallery {
+      background-color: var(--secondary-grey);
+      border: 1px solid var(--border-grey);
+      border-radius: 30px;
+      padding: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1/1;
+      max-width: 480px;
+      width: 100%;
+      margin: 0 auto;
+      flex-shrink: 0;
+    }
+    @media (min-width: 768px) {
+      .detail-gallery {
+        margin: 0;
+      }
+    }
+    .detail-info {
+      flex-grow: 1;
+    }
+    .detail-gallery img {
+      max-height: 80%;
+      object-fit: contain;
+      transition: var(--transition-slow);
+    }
+    .detail-gallery:hover img {
+      transform: scale(1.05);
+    }
+    .detail-breadcrumb {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .detail-breadcrumb a:hover {
+      color: white;
+    }
+    .detail-info h1 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    @media (min-width: 768px) {
+      .detail-info h1 {
+        font-size: 1.85rem;
+      }
+    }
+    .detail-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.78rem;
+    }
+    .detail-rating {
+      color: var(--accent-gold);
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .detail-rating span {
+      color: var(--text-secondary);
+      margin-left: 0.25rem;
+    }
+    .detail-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-grey);
+    }
+    .detail-price {
+      font-family: var(--font-product);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .detail-price-original {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      text-decoration: line-through;
+    }
+    .detail-desc {
+      color: var(--accent-silver, #C0C0C0);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin-bottom: 1.75rem;
+    }
+    .detail-features {
+      list-style: none;
+      display: grid;
+      grid-template-cols: 1fr;
+      gap: 0.65rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 640px) {
+      .detail-features {
+        grid-template-cols: repeat(2, 1fr);
+      }
+    }
+    .detail-features li {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .detail-features li::before {
+      content: '✓';
+      color: var(--accent-gold);
+      font-weight: bold;
+    }
+    .detail-actions {
+      display: flex;
+      flex-direction: column;
+      sm-flex-direction: row;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 640px) {
+      .detail-actions {
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    .qty-selector {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--input-grey);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 0.5rem 1rem;
+      width: 120px;
+      height: 44px;
+    }
+    .qty-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.1rem;
+      cursor: pointer;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+    .qty-btn:hover {
+      color: var(--accent-gold);
+    }
+    .qty-val {
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .detail-actions .btn-add-cart {
+      flex-grow: 1;
+      height: 44px;
+      font-size: 0.85rem;
+      padding: 0 1.5rem;
+    }
+    .detail-fav-actions {
+      display: flex;
+      gap: 1.5rem;
+      border-top: 1px solid var(--border-grey);
+      padding-top: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+    }
+    .detail-fav-actions button {
+      background: none;
+      border: none;
+      color: inherit;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition-smooth);
+    }
+    .detail-fav-actions button:hover {
+      color: white;
+    }
+    /* Tabs & Details */
+    .specs-reviews-layout {
+      display: grid;
+      grid-template-cols: 1fr;
+      gap: 4rem;
+      margin-bottom: 5rem;
+    }
+    @media (min-width: 1024px) {
+      .specs-reviews-layout {
+        grid-template-cols: 1.2fr 1fr;
+      }
+    }
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .specs-table tr {
+      border-bottom: 1px solid var(--border-grey);
+    }
+    .specs-table tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.01);
+    }
+    .specs-table td {
+      padding: 1.15rem 1.5rem;
+      color: var(--text-secondary);
+    }
+    .specs-table td:first-child {
+      font-weight: 600;
+      color: white;
+      width: 35%;
+    }
+    .review-item {
+      background-color: var(--glass-bg);
+      border: 1px solid var(--border-grey);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .review-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+    }
+    .review-name {
+      font-weight: 600;
+    }
+    .review-stars {
+      color: var(--accent-gold);
+    }
+    .review-comment {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    /* FAQs */
+    .faq-layout {
+      max-width: 800px;
+      margin: 0 auto 5rem;
+    }
+    .faq-item {
+      background-color: var(--secondary-grey);
+      border: 1px solid var(--border-grey);
+      border-radius: 14px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+    }
+    .faq-btn {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: var(--transition-smooth);
+    }
+    .faq-btn:hover {
+      color: var(--accent-gold);
+    }
+    .faq-content {
+      padding: 0 1.5rem 1.25rem;
+      color: var(--text-secondary);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      display: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      padding-top: 1rem;
+    }
+    /* Related Products */
+    .related-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    @media (min-width: 768px) {
+      .related-grid {
+        justify-content: flex-start;
+      }
+    }
+    .related-card {
+      background-color: var(--card-grey);
+      border: 1px solid var(--border-grey);
+      border-radius: 16px;
+      padding: 0.85rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 200px;
+    }
+    @media (max-width: 480px) {
+      .related-card {
+        max-width: 140px;
+      }
+    }
+    .related-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(212, 175, 55, 0.3);
+      box-shadow: 0 12px 30px rgba(212, 175, 55, 0.04);
+    }
+    .related-img-wrapper {
+      width: 100%;
+      height: 150px;
+      background-color: rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem;
+      margin-bottom: 0.65rem;
+      overflow: hidden;
+    }
+    @media (max-width: 480px) {
+      .related-img-wrapper {
+        height: 100px;
+      }
+    }
+    .related-img-wrapper img {
+      max-height: 100%;
+      object-fit: contain;
+      transition: var(--transition-slow);
+    }
+    .related-card:hover .related-img-wrapper img {
+      transform: scale(1.06);
+    }
+    .related-card h4 {
+      font-family: var(--font-product);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 0.25rem;
+      line-clamp: 1;
+    }
+    .related-price {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Navigation -->
+  <header class="header scrolled">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">KAFF</a>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#products">Collections</a></li>
+        <li><a href="index.html#featured">Featured</a></li>
+        <li><a href="index.html#about">Why KAFF</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="index.html#blog">Journal</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button aria-label="Search">
+          <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button aria-label="Wishlist">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        </button>
+        <button aria-label="Cart">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle Menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('open'); document.querySelector('.drawer-overlay').classList.toggle('open');">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" onclick="document.querySelector('.mobile-drawer').classList.remove('open'); document.querySelector('.drawer-overlay').classList.remove('open');"></div>
+  <nav class="mobile-drawer">
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#products">Collections</a></li>
+      <li><a href="index.html#featured">Featured Products</a></li>
+      <li><a href="index.html#about">Why choose KAFF</a></li>
+      <li><a href="index.html#gallery">Kitchen Inspiration</a></li>
+      <li><a href="index.html#blog">Kitchen Journal</a></li>
+      <li><a href="index.html#contact">Get In Touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Product Detail View -->
+  <section class="section product-detail-section">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav class="detail-breadcrumb">
+        <a href="index.html">Home</a> &gt; 
+        <a href="index.html#products">Collections</a> &gt; 
+        <a id="breadcrumb-category" class="text-gold" href="index.html#products">Category</a> &gt; 
+        <span id="breadcrumb-name" style="color: white;">Product Name</span>
+      </nav>
+
+      <!-- Grid Layout -->
+      <div class="detail-layout">
+        <!-- Gallery -->
+        <div class="detail-gallery">
+          <span id="detail-badge" class="product-badge" style="display: none; top: 1.5rem; left: 1.5rem;">Bestseller</span>
+          <img id="detail-image" src="images/oven.png" alt="Appliance Detail Model">
+        </div>
+
+        <!-- Info Details -->
+        <div class="detail-info">
+          <span id="detail-category" class="uppercase-tracking text-gold" style="display: block; margin-bottom: 0.5rem;">Ovens</span>
+          <h1 id="detail-name">KAFF Premium Appliance</h1>
+          
+          <div class="detail-meta">
+            <div class="detail-rating">
+              <span id="detail-stars">★★★★★</span>
+              <span id="detail-rating-value">4.8</span>
+            </div>
+            <span style="color: var(--text-muted);">|</span>
+            <span style="color: var(--text-secondary);">12 Customer Reviews</span>
+          </div>
+
+          <div class="detail-price-row">
+            <span id="detail-price" class="detail-price">₹64,990</span>
+            <span id="detail-price-original" class="detail-price-original">₹79,990</span>
+          </div>
+
+          <p id="detail-desc" class="detail-desc">
+            Experience luxury and culinary excellence with this premium appliance. Engineered with German tech and Italian aesthetics to deliver stellar performance.
+          </p>
+
+          <!-- Check list -->
+          <ul id="detail-features" class="detail-features">
+            <!-- Populated by JS -->
+          </ul>
+
+          <!-- Actions -->
+          <div class="detail-actions">
+            <!-- Qty -->
+            <div class="qty-selector">
+              <button class="qty-btn minus" onclick="updateQty(-1)">−</button>
+              <span id="qty-val" class="qty-val">1</span>
+              <button class="qty-btn plus" onclick="updateQty(1)">+</button>
+            </div>
+            <!-- Add Button -->
+            <button class="btn btn-primary btn-add-cart" onclick="alert('Added to cart!')">
+              <svg class="icon" viewBox="0 0 24 24" style="width: 16px; height: 16px; margin-right: 8px; stroke: currentColor;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg> Add to Cart
+            </button>
+          </div>
+
+          <!-- Wishlist / Compare / Status -->
+          <div class="detail-fav-actions">
+            <button onclick="toggleWishlist(this)">♡ Add to Wishlist</button>
+            <span>|</span>
+            <button onclick="alert('Added to compare list!')">
+              <svg class="icon" viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; vertical-align: text-bottom; margin-right: 4px;"><polyline points="16 3 21 8 16 13"></polyline><line x1="21" y1="8" x2="9" y2="8"></line><polyline points="8 21 3 16 8 11"></polyline><line x1="3" y1="16" x2="15" y2="16"></line></svg> Add to Compare
+            </button>
+            <span>|</span>
+            <span style="color: #25D366; font-weight: 600; display: inline-flex; align-items: center; gap: 0.25rem;">
+              <svg viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 3;"><polyline points="20 6 9 17 4 12"></polyline></svg> In Stock & Ready to Ship
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Specs & Reviews Grid -->
+      <div class="specs-reviews-layout">
+        <!-- Specs Table -->
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem;">Technical Specifications</h3>
+          <div class="glass-card" style="overflow: hidden;">
+            <table class="specs-table">
+              <tbody id="detail-specs-body">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Review list -->
+        <div>
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem;">Customer Reviews</h3>
+          <div id="detail-reviews-list">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordion -->
+      <div class="faq-layout">
+        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; text-align: center; margin-bottom: 2rem;">Frequently Asked Questions</h3>
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span>Is professional installation included?</span>
+            <span>▼</span>
+          </button>
+          <div class="faq-content">
+            Yes. KAFF provides certified professional installation for all premium built-in hobs, ovens, chimneys, and dishwashers. You can request technician services via our Support Center.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span>What is covered under the comprehensive warranty?</span>
+            <span>▼</span>
+          </button>
+          <div class="faq-content">
+            Our warranty covers all structural parts, functional electronic systems, and manufacturing defects. Selected motor ranges include lifetime warranty extensions. Physical damages or user-inflicted scratches are not covered.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-btn" onclick="toggleFaq(this)">
+            <span>How do I clean and maintain the black glass finishes?</span>
+            <span>▼</span>
+          </button>
+          <div class="faq-content">
+            We recommend using a clean damp microfiber cloth with diluted mild soap or specialized glass cleaner. Avoid coarse steel wool, scouring sponges, or highly abrasive chemicals that could scratch the gloss glass surface.
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Products -->
+      <div>
+        <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 2rem;">Related Appliances</h3>
+        <div id="detail-related-grid" class="related-grid">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="text-gold">KAFF</h3>
+          <p>Redefining Kitchen Excellence Since 1998. Italian design and German engineering for premium home culinary spaces.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">IG</a>
+            <a href="#" class="social-link" aria-label="Facebook">FB</a>
+            <a href="#" class="social-link" aria-label="Twitter">TW</a>
+            <a href="#" class="social-link" aria-label="YouTube">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="index.html#products">Built-in Ovens</a></li>
+            <li><a href="index.html#products">Gas Hobs & Cooktops</a></li>
+            <li><a href="index.html#products">Silent Chimneys</a></li>
+            <li><a href="index.html#products">Premium Dishwashers</a></li>
+            <li><a href="index.html#products">French-door Fridges</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support & Service</h4>
+          <ul>
+            <li><a href="index.html#service">Appliance Registration</a></li>
+            <li><a href="index.html#service">Extended Warranty</a></li>
+            <li><a href="index.html#service">Book technician</a></li>
+            <li><a href="index.html#dealers">Store Locator</a></li>
+            <li><a href="index.html#contact">Contact Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Flagship Showroom</h4>
+          <ul class="contact-info">
+            <li>
+              <a href="https://maps.app.goo.gl/9Vee6S2ZixDAgovJA" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">
+                Kondapur, Hyderabad, India
+              </a>
+            </li>
+            <li>+91 1800-123-456</li>
+            <li>info@kaff.in</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KAFF Appliances. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="product.js"></script>
+</body>
+</html>
