@@ -1,0 +1,7 @@
+# KAFF Kitchen Appliances - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /.vercel/
+
+# Sitemaps
+Sitemap: https://kaffbykriva.in/sitemap.xml

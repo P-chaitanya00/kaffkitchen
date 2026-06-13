@@ -1,0 +1,5 @@
+node_modules
+.git
+.DS_Store
+*.dat
+google-apps-script.js

@@ -3,8 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KAFF — Appliance Details</title>
-  <link rel="stylesheet" href="style.css">
+  <title>KAFF — Premium Kitchen Appliance Details | Built-in Ovens, Chimneys, Hobs</title>
+  <meta name="description" content="View detailed specifications, pricing, and features of KAFF premium kitchen appliances. Built-in ovens, silent chimneys, gas hobs, dishwashers and more. Italian design, German engineering.">
+  <meta name="keywords" content="KAFF appliance details, built-in oven specs, chimney features, hob price, dishwasher review, kitchen appliance India, Hyderabad">
+  <meta name="author" content="KAFF Kitchen Appliances">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0A0A0A">
+  <link rel="canonical" href="https://kaffbykriva.in/product.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://kaffbykriva.in/product.html">
+  <meta property="og:title" content="KAFF — Premium Kitchen Appliance Details">
+  <meta property="og:description" content="View detailed specs, pricing, and features of KAFF premium luxury kitchen appliances.">
+  <meta property="og:image" content="https://kaffbykriva.in/images/oven.png">
+  <meta property="og:site_name" content="KAFF Kitchen Appliances">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KAFF — Premium Kitchen Appliance Details">
+  <meta name="twitter:description" content="View detailed specs, pricing, and features of KAFF premium luxury kitchen appliances.">
+  <meta name="twitter:image" content="https://kaffbykriva.in/images/oven.png">
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23D4AF37%22 font-family=%22Montserrat,sans-serif%22 font-weight=%22900%22>K</text></svg>">
+  <link rel="stylesheet" href="style.css?v=3">
+
+  <!-- JSON-LD: Product (dynamically updated by JS) -->
+  <script type="application/ld+json" id="product-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "KAFF Premium Kitchen Appliance",
+    "brand": { "@type": "Brand", "name": "KAFF" },
+    "description": "Premium luxury kitchen appliance with Italian design and German engineering.",
+    "image": "https://kaffbykriva.in/images/oven.png",
+    "offers": {
+      "@type": "Offer",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "seller": { "@type": "Organization", "name": "KAFF Kitchen Appliances" }
+    }
+  }
+  </script>
   <style>
     /* Unique styling for Product Details Page to look extremely premium */
     .product-detail-section {
@@ -23,10 +63,10 @@
       }
     }
     .detail-gallery {
-      background-color: var(--secondary-grey);
+      background-color: transparent;
       border: 1px solid var(--border-grey);
       border-radius: 30px;
-      padding: 2.5rem;
+      padding: 0;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -47,8 +87,9 @@
       flex-grow: 1;
     }
     .detail-gallery img {
-      max-height: 80%;
-      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: var(--transition-slow);
     }
     .detail-gallery:hover img {
@@ -191,6 +232,30 @@
       height: 44px;
       font-size: 0.85rem;
       padding: 0 1.5rem;
+    }
+    .detail-actions .btn-whatsapp {
+      flex-grow: 1;
+      height: 44px;
+      font-size: 0.85rem;
+      padding: 0 1.5rem;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(37, 211, 102, 0.15);
+    }
+    .detail-actions .btn-whatsapp:hover {
+      background-color: #20ba59;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(37, 211, 102, 0.25);
     }
     .detail-fav-actions {
       display: flex;
@@ -345,14 +410,15 @@
     .related-img-wrapper {
       width: 100%;
       height: 150px;
-      background-color: rgba(0, 0, 0, 0.15);
+      background-color: transparent;
       border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0.75rem;
+      padding: 0;
       margin-bottom: 0.65rem;
       overflow: hidden;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
     @media (max-width: 480px) {
       .related-img-wrapper {
@@ -360,8 +426,9 @@
       }
     }
     .related-img-wrapper img {
-      max-height: 100%;
-      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: var(--transition-slow);
     }
     .related-card:hover .related-img-wrapper img {
@@ -381,6 +448,46 @@
       color: var(--accent-gold);
     }
   </style>
+
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+    import { 
+      getFirestore, 
+      collection, 
+      addDoc, 
+      getDocs, 
+      serverTimestamp, 
+      doc, 
+      deleteDoc, 
+      query, 
+      where 
+    } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBaDlNBepvx5OfKAMwo5FDwTBRFr1D7NqM",
+      authDomain: "kaff-kitchen-appliances-4385e.firebaseapp.com",
+      projectId: "kaff-kitchen-appliances-4385e",
+      storageBucket: "kaff-kitchen-appliances-4385e.firebasestorage.app",
+      messagingSenderId: "841199691311",
+      appId: "1:841199691311:web:a3d3196ed3bd23aaf988da",
+      measurementId: "G-TPY2NH04NW"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app, "default");
+
+    // Make Firebase available globally
+    window.firebaseDB = db;
+    window.firebaseAddDoc = addDoc;
+    window.firebaseCollection = collection;
+    window.firebaseGetDocs = getDocs;
+    window.firebaseServerTimestamp = serverTimestamp;
+    window.firebaseDoc = doc;
+    window.firebaseDeleteDoc = deleteDoc;
+    window.firebaseQuery = query;
+    window.firebaseWhere = where;
+  </script>
 </head>
 <body>
 
@@ -392,21 +499,13 @@
         <li><a href="index.html#home">Home</a></li>
         <li><a href="index.html#products">Collections</a></li>
         <li><a href="index.html#featured">Featured</a></li>
+        <li><a href="index.html#combos">Combos</a></li>
         <li><a href="index.html#about">Why KAFF</a></li>
         <li><a href="index.html#gallery">Gallery</a></li>
         <li><a href="index.html#blog">Journal</a></li>
         <li><a href="index.html#contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <button aria-label="Search">
-          <svg class="icon" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-        </button>
-        <button aria-label="Wishlist">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        </button>
-        <button aria-label="Cart">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-        </button>
         <button class="mobile-menu-btn" aria-label="Toggle Menu" onclick="document.querySelector('.mobile-drawer').classList.toggle('open'); document.querySelector('.drawer-overlay').classList.toggle('open');">
           <span></span>
           <span></span>
@@ -423,6 +522,7 @@
       <li><a href="index.html#home">Home</a></li>
       <li><a href="index.html#products">Collections</a></li>
       <li><a href="index.html#featured">Featured Products</a></li>
+      <li><a href="index.html#combos">Combo Offers</a></li>
       <li><a href="index.html#about">Why choose KAFF</a></li>
       <li><a href="index.html#gallery">Kitchen Inspiration</a></li>
       <li><a href="index.html#blog">Kitchen Journal</a></li>
@@ -445,9 +545,14 @@
       <!-- Grid Layout -->
       <div class="detail-layout">
         <!-- Gallery -->
-        <div class="detail-gallery">
-          <span id="detail-badge" class="product-badge" style="display: none; top: 1.5rem; left: 1.5rem;">Bestseller</span>
-          <img id="detail-image" src="images/oven.png" alt="Appliance Detail Model">
+        <div style="display: flex; flex-direction: column; gap: 1rem; align-items: center; max-width: 480px; width: 100%; margin: 0 auto; flex-shrink: 0;">
+          <div class="detail-gallery" style="margin: 0; width: 100%; position: relative;">
+            <span id="detail-badge" class="product-badge" style="display: none; top: 1.5rem; left: 1.5rem;">Bestseller</span>
+            <button id="detailPrevBtn" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.6); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 50%; color: #fff; width: 40px; height: 40px; display: none; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.5rem; transition: all 0.3s; font-family: system-ui, -apple-system, sans-serif;" onclick="detailPrevImage()" onmouseover="this.style.background='rgba(0, 0, 0, 0.85)'; this.style.transform='translateY(-50%) scale(1.1)';" onmouseout="this.style.background='rgba(0, 0, 0, 0.6)'; this.style.transform='translateY(-50%) scale(1)';">&lsaquo;</button>
+            <img id="detail-image" src="images/oven.png" alt="Appliance Detail Model">
+            <button id="detailNextBtn" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.6); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 50%; color: #fff; width: 40px; height: 40px; display: none; align-items: center; justify-content: center; cursor: pointer; z-index: 10; font-size: 1.5rem; transition: all 0.3s; font-family: system-ui, -apple-system, sans-serif;" onclick="detailNextImage()" onmouseover="this.style.background='rgba(0, 0, 0, 0.85)'; this.style.transform='translateY(-50%) scale(1.1)';" onmouseout="this.style.background='rgba(0, 0, 0, 0.6)'; this.style.transform='translateY(-50%) scale(1)';">&rsaquo;</button>
+          </div>
+          <div id="detailThumbnailsContainer" style="display: flex; gap: 0.5rem; width: 100%; justify-content: center; overflow-x: auto; padding-bottom: 0.25rem;"></div>
         </div>
 
         <!-- Info Details -->
@@ -487,15 +592,18 @@
               <button class="qty-btn plus" onclick="updateQty(1)">+</button>
             </div>
             <!-- Add Button -->
-            <button class="btn btn-primary btn-add-cart" onclick="alert('Added to cart!')">
+            <button class="btn btn-primary btn-add-cart" onclick="addActiveProductToCart(event)">
               <svg class="icon" viewBox="0 0 24 24" style="width: 16px; height: 16px; margin-right: 8px; stroke: currentColor;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg> Add to Cart
             </button>
+            <!-- WhatsApp Inquiry -->
+            <a id="detail-whatsapp" class="btn btn-whatsapp" href="#" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: white;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              Inquire on WhatsApp
+            </a>
           </div>
 
-          <!-- Wishlist / Compare / Status -->
+          <!-- Compare / Status -->
           <div class="detail-fav-actions">
-            <button onclick="toggleWishlist(this)">♡ Add to Wishlist</button>
-            <span>|</span>
             <button onclick="alert('Added to compare list!')">
               <svg class="icon" viewBox="0 0 24 24" style="width: 14px; height: 14px; stroke: currentColor; vertical-align: text-bottom; margin-right: 4px;"><polyline points="16 3 21 8 16 13"></polyline><line x1="21" y1="8" x2="9" y2="8"></line><polyline points="8 21 3 16 8 11"></polyline><line x1="3" y1="16" x2="15" y2="16"></line></svg> Add to Compare
             </button>
@@ -581,10 +689,26 @@
           <h3 class="text-gold">KAFF</h3>
           <p>Redefining Kitchen Excellence Since 1998. Italian design and German engineering for premium home culinary spaces.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram">IG</a>
-            <a href="#" class="social-link" aria-label="Facebook">FB</a>
-            <a href="#" class="social-link" aria-label="Twitter">TW</a>
-            <a href="#" class="social-link" aria-label="YouTube">YT</a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <svg fill="currentColor" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <svg fill="currentColor" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
+                <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+              <svg fill="currentColor" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+              <svg fill="currentColor" viewBox="0 0 24 24" style="width: 16px; height: 16px;">
+                <path d="M23.498 6.163a3.003 3.003 0 00-2.11-2.11C19.52 3.545 12 3.545 12 3.545s-7.52 0-9.388.508a3.003 3.003 0 00-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 002.11 2.11c1.868.507 9.388.507 9.388.507s7.52 0 9.388-.507a3.003 3.003 0 002.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="footer-col">
@@ -615,8 +739,8 @@
                 Kondapur, Hyderabad, India
               </a>
             </li>
-            <li>+91 1800-123-456</li>
-            <li>info@kaff.in</li>
+            <li><a href="tel:+919000714841" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">+91 90007 14841</a> / <a href="tel:+919676150551" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">+91 96761 50551</a></li>
+            <li><a href="mailto:Kaffkitchenappliances@gmail.com" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">Kaffkitchenappliances@gmail.com</a></li>
           </ul>
         </div>
       </div>
@@ -631,6 +755,65 @@
     </div>
   </footer>
 
-  <script src="product.js"></script>
+  <!-- Floating Cart Bar -->
+  <div id="floatingCartBar" class="floating-cart-bar">
+    <div class="cart-bar-info">
+      <span class="cart-bar-icon">🛒</span>
+      <span class="cart-bar-badge" id="cartBarCount">0</span>
+      <span class="cart-bar-divider">|</span>
+      <span class="cart-bar-total" id="cartBarTotal">₹0</span>
+    </div>
+    <button class="cart-bar-btn" onclick="openCartModal()">View Cart</button>
+  </div>
+
+  <!-- Cart Modal -->
+  <div class="product-popup-overlay" id="cartModal">
+    <div class="product-popup" style="max-width: 500px;">
+      <button class="product-popup-close" onclick="closeCartModal()">&times;</button>
+      <div class="product-popup-body">
+        <h3 style="font-family: var(--font-product); font-weight: 700; font-size: 1.25rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 0.75rem; margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem; color: #fff;">
+          🛒 Shopping Cart
+        </h3>
+        
+        <div id="cartItemsList" class="cart-items-list">
+          <!-- Cart items injected here -->
+        </div>
+        
+        <div class="cart-total-row" style="display: flex; justify-content: space-between; align-items: center; margin-top: 1.25rem; padding-top: 1rem; border-top: 1px dashed rgba(255,255,255,0.1); font-weight: 700; font-size: 1.1rem; color: #fff;">
+          <span>Total:</span>
+          <span id="cartModalTotal">₹0</span>
+        </div>
+        
+        <!-- Cart Inquiry details -->
+        <div class="cart-inquiry-details" style="margin-top: 1.5rem; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 1.25rem; border-radius: 16px;">
+          <h4 style="font-family: var(--font-product); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: var(--accent-gold); letter-spacing: 0.05em; margin-bottom: 0.75rem;">Inquiry Contact Info</h4>
+          
+          <div style="margin-bottom: 0.75rem;">
+            <label style="display: block; font-size: 0.65rem; color: #8a8a8a; text-transform: uppercase; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Your Name</label>
+            <input type="text" id="cartName" placeholder="Enter your full name" style="width: 100%; background: #1a1a1a; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+          </div>
+          
+          <div style="margin-bottom: 0.75rem;">
+            <label style="display: block; font-size: 0.65rem; color: #8a8a8a; text-transform: uppercase; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Phone Number</label>
+            <input type="tel" id="cartPhone" placeholder="Enter 10-digit mobile number" style="width: 100%; background: #1a1a1a; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+          </div>
+          
+          <div>
+            <label style="display: block; font-size: 0.65rem; color: #8a8a8a; text-transform: uppercase; margin-bottom: 0.25rem; font-weight: 600; letter-spacing: 0.05em;">Email Address</label>
+            <input type="email" id="cartEmail" placeholder="Enter your email address" style="width: 100%; background: #1a1a1a; border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 0.6rem; color: #fff; font-size: 0.8rem;" required>
+          </div>
+        </div>
+        
+        <div class="cart-actions" style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+          <button class="btn-cart-submit" onclick="submitCartInquiry()" style="width: 100%; padding: 0.9rem; background: #25D366; color: #fff; border: none; border-radius: 14px; font-size: 0.9rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 0.5rem; transition: all 0.3s ease;">
+            <svg fill="currentColor" viewBox="0 0 24 24" style="width: 18px; height: 18px;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Send WhatsApp Inquiry & Email
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="data.js?v=3"></script>
+  <script src="product.js?v=3"></script>
 </body>
 </html>
