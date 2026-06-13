@@ -371,7 +371,7 @@ function initProductFilter() {
       card.style.position = 'relative'; // Anchor for the absolute delete button
       
       const ratingStars = Array.from({ length: 5 }).map((_, i) => 
-        `<span class="${i < Math.floor(p.rating) ? '' : 'star-muted'}">★</span>`
+        `<span class="${i < Math.floor(p.rating || 5) ? '' : 'star-muted'}">★</span>`
       ).join('');
 
       const editBtnHtml = `
@@ -386,28 +386,31 @@ function initProductFilter() {
         </button>
       `;
 
-      const waMsg = encodeURIComponent(`Hi, I'm interested in the ${p.name} (₹${p.price.toLocaleString('en-IN')}). Please share more details.`);
+      const pPrice = typeof p.price === 'number' ? p.price : parseFloat(p.price) || 0;
+      const pOriginalPrice = typeof p.originalPrice === 'number' ? p.originalPrice : parseFloat(p.originalPrice) || 0;
+
+      const waMsg = encodeURIComponent(`Hi, I'm interested in the ${p.name || 'product'} (₹${pPrice.toLocaleString('en-IN')}). Please share more details.`);
 
       card.innerHTML = `
         ${editBtnHtml}
         ${deleteBtnHtml}
         <div class="product-img-wrapper" style="cursor:pointer" onclick="openProductPopup('${p.id}')">
           ${p.badge ? `<span class="product-badge">${p.badge}</span>` : ''}
-          <img src="${p.image}" alt="${p.name}">
+          <img src="${p.image || 'images/oven.png'}" alt="${p.name || 'Product'}">
         </div>
         <div class="product-info">
-          <span class="product-category">${p.category}</span>
-          <h3 style="cursor:pointer" onclick="openProductPopup('${p.id}')">${p.name}</h3>
+          <span class="product-category">${p.category || 'Uncategorized'}</span>
+          <h3 style="cursor:pointer" onclick="openProductPopup('${p.id}')">${p.name || 'Untitled Product'}</h3>
           <div class="product-rating">
             ${ratingStars}
-            <span>(${p.rating.toFixed(1)})</span>
+            <span>(${(p.rating || 5.0).toFixed(1)})</span>
           </div>
           <ul class="product-features-list">
-            ${p.features.map(f => `<li>${f}</li>`).join('')}
+            ${(p.features || []).map(f => `<li>${f}</li>`).join('')}
           </ul>
           <div class="product-price-row">
-            <span class="product-price">₹${p.price.toLocaleString('en-IN')}</span>
-            ${p.originalPrice ? `<span class="product-price-original">₹${p.originalPrice.toLocaleString('en-IN')}</span>` : ''}
+            <span class="product-price">₹${pPrice.toLocaleString('en-IN')}</span>
+            ${pOriginalPrice ? `<span class="product-price-original">₹${pOriginalPrice.toLocaleString('en-IN')}</span>` : ''}
           </div>
           <div class="product-actions-grid">
             <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('${p.id}', event)">

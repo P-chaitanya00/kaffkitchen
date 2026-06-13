@@ -353,12 +353,14 @@ function renderRelatedProducts(currProduct) {
       window.location.href = `product.html?id=${p.id}`;
     };
 
+    const pPrice = typeof p.price === 'number' ? p.price : parseFloat(p.price) || 0;
+
     card.innerHTML = `
       <div class="related-img-wrapper">
-        <img src="${p.image}" alt="${p.name}">
+        <img src="${p.image || 'images/oven.png'}" alt="${p.name || 'Product'}">
       </div>
-      <h4>${p.name}</h4>
-      <div class="related-price">₹${p.price.toLocaleString('en-IN')}</div>
+      <h4>${p.name || 'Untitled Product'}</h4>
+      <div class="related-price">₹${pPrice.toLocaleString('en-IN')}</div>
     `;
     grid.appendChild(card);
   });
