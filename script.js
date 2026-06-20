@@ -3217,16 +3217,12 @@ window.renderCombos = () => {
   
   combos.forEach(c => {
     const card = document.createElement('div');
-    card.className = 'combo-card scroll-reveal revealed';
+    card.className = 'combo-card combo-image-card scroll-reveal revealed';
     card.style.position = 'relative';
     
     const savings = c.mrp - c.price;
     const savingsPercentage = Math.round((savings / c.mrp) * 100);
     
-    const giftHtml = c.freeGift 
-      ? `<div class="combo-gift-badge">🎁 FREE ${c.freeGift} ${c.freeGiftMrp ? `(Worth ₹${c.freeGiftMrp.toLocaleString('en-IN')})` : ''}</div>` 
-      : '';
-      
     const editBtnHtml = `
       <button class="btn-edit-product" onclick="event.stopPropagation(); editCombo('${c.id}')" title="Edit Combo">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 1 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
@@ -3239,58 +3235,32 @@ window.renderCombos = () => {
       </button>
     `;
     
-    const itemsHtml = (c.items || []).map(item => `
-      <div class="combo-item-box">
-        <div class="combo-item-header">
-          <span class="combo-item-type">${item.type}</span>
-          <span class="combo-item-model">${item.model}</span>
-        </div>
-        <ul class="combo-item-specs">
-          ${(item.specs || []).map(spec => `<li>${spec}</li>`).join('')}
-        </ul>
-      </div>
-    `).join('');
+    const waMsg = encodeURIComponent(`Hi, I'm interested in ${c.name} (Offer Price: ₹${c.price.toLocaleString('en-IN')}). Please share availability and details.`);
     
-    const itemsText = (c.items || []).map(item => `${item.type}: ${item.model}`).join(' & ');
-    const waMsg = encodeURIComponent(`Hi, I'm interested in the ${c.name} (Offer Price: ₹${c.price.toLocaleString('en-IN')}) containing ${itemsText}. Please share availability.`);
+    const imageEscaped = (c.image || '').replace(/'/g, "\\'");
+    const nameEscaped = (c.name || '').replace(/'/g, "\\'");
     
     card.innerHTML = `
       ${editBtnHtml}
       ${deleteBtnHtml}
-      
-      <div class="combo-badge-row">
-        <span class="combo-discount-badge">${savingsPercentage}% OFF</span>
-        ${c.freeGift ? `<span class="combo-gift-badge-small">Gift Included</span>` : ''}
+      <div class="combo-image-wrapper" onclick="openFlyerPopup('${imageEscaped}', '${nameEscaped}')">
+        <img src="${c.image}" alt="${c.name}" loading="lazy" />
+        <div class="combo-discount-overlay">${savingsPercentage}% OFF</div>
       </div>
-      
-      <div class="combo-card-body">
+      <div class="combo-image-footer">
         <h3 class="combo-title">${c.name}</h3>
-        
-        ${giftHtml}
-        
-        <div class="combo-items-container">
-          ${itemsHtml}
+        <div class="combo-price-row">
+          <span class="combo-mrp">MRP: <s>₹${c.mrp.toLocaleString('en-IN')}</s></span>
+          <span class="combo-offer-price">₹${c.price.toLocaleString('en-IN')}</span>
         </div>
-        
-        <div class="combo-price-section">
-          <div class="combo-price-details">
-            <span class="combo-mrp">Combined MRP: <span style="text-decoration: line-through;">₹${c.mrp.toLocaleString('en-IN')}</span></span>
-            <span class="combo-price">Offer Price: ₹${c.price.toLocaleString('en-IN')}</span>
-          </div>
-          <div class="combo-savings">You Save: ₹${savings.toLocaleString('en-IN')}</div>
-        </div>
-        
-        <div class="combo-actions" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-top: 0.75rem;">
-          <button class="btn-combo-flyer" onclick="openFlyerPopup('${c.image}', '${c.name} Original Flyer')" style="padding: 0.65rem 0.5rem; font-size: 0.75rem;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg> Flyer
-          </button>
-          <button class="btn-add-cart" onclick="event.stopPropagation(); addToCart('${c.id}', event, true)" style="background-color: var(--accent-gold); color: var(--primary-black); border: none; font-weight: 600; padding: 0.65rem 0.5rem; border-radius: 10px; font-size: 0.75rem; display: flex; align-items: center; justify-content: center; gap: 0.3rem; cursor: pointer;">
-            <svg class="icon" viewBox="0 0 24 24" style="width: 13px; height: 13px; stroke: currentColor; fill: none; stroke-width: 2;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg> Add to Cart
-          </button>
-          <a class="btn-combo-whatsapp" href="https://wa.me/919000714841?text=${waMsg}" target="_blank" rel="noopener noreferrer" style="grid-column: span 2; display: flex; justify-content: center; align-items: center; gap: 0.4rem; padding: 0.65rem 1rem; background-color: #25D366; color: #fff; border-radius: 10px; font-size: 0.8rem; font-weight: 600; text-decoration: none; margin-top: 0.25rem;">
-            <svg viewBox="0 0 24 24" style="width: 15px; height: 15px; fill: white;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-            Inquire on WhatsApp
+        <div class="combo-image-actions">
+          <a class="btn-combo-wa" href="https://wa.me/919000714841?text=${waMsg}" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="white" style="width:16px;height:16px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Enquire Now
           </a>
+          <button class="btn-combo-flyer" onclick="openFlyerPopup('${imageEscaped}', '${nameEscaped}')">
+            View Details
+          </button>
         </div>
       </div>
     `;

@@ -1323,7 +1323,7 @@ const defaultCollections = [
 const defaultCombos = [
   {
     "id": "combo-01",
-    "name": "Super Saver Combo 1",
+    "name": "ASHPRO 60DC + HBR 604 A",
     "mrp": 67470,
     "price": 44354,
     "freeGift": "Air Fryer",
@@ -1333,29 +1333,29 @@ const defaultCombos = [
     "items": [
       {
         "type": "Chimney",
-        "model": "AERO 60BL/RG",
+        "model": "ASHPRO 60DC",
         "specs": [
-          "Filter-less Technology",
-          "Dry Heat Auto Clean",
-          "Gesture/Touch Control (9 Speed)",
-          "Airflow: 1600 m\u00b3/h"
+          "Filter-less + Dry Heat Auto Clean",
+          "BLDC Motor, Airflow up to 1600 m\u00b3/h",
+          "Gesture Motion with 9 Speed Levels",
+          "Matt Black Finish, Size: 60cm"
         ]
       },
       {
         "type": "Built-in Hob",
-        "model": "CRH604",
+        "model": "HBR 604 A",
         "specs": [
-          "FFD Safety Device",
-          "4 Burners (1 Big Triple Ring)",
-          "Decorative Glass Bevel Edge",
-          "Cast Iron Pan Supports"
+          "4 Brass Burners (1 Triple Ring + 3 Dual Ring)",
+          "8mm Black Tempered Glass",
+          "Auto Electric Ignition",
+          "Enamelled Matt Finish Grills, Size: 60cm"
         ]
       }
     ]
   },
   {
     "id": "combo-02",
-    "name": "Super Saver Combo 2",
+    "name": "AERO 60BL/RG + CRH604",
     "mrp": 63470,
     "price": 37861,
     "freeGift": "Air Fryer",
@@ -1365,29 +1365,29 @@ const defaultCombos = [
     "items": [
       {
         "type": "Chimney",
-        "model": "ASHPRO 60DC",
+        "model": "AERO 60BL/RG",
         "specs": [
-          "Filter-less Technology",
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Dry Heat Auto Clean",
-          "Gesture Control"
+          "Filter-less + Dry Heat Auto Clean",
+          "Dual Ventilation System",
+          "Touch Control with 3-Speed Gesture",
+          "Airflow up to 1350 m\u00b3/h, Size: 60cm"
         ]
       },
       {
         "type": "Built-in Hob",
-        "model": "HBR 604 A",
+        "model": "CRH604",
         "specs": [
-          "4 Brass Burners",
-          "8mm Tempered Glass",
-          "Cast Iron Support",
-          "Auto Ignition"
+          "Black Coated Tornado Style Burners",
+          "1 Triple Ring + 3 Dual Ring Burners",
+          "8mm Black Tempered Glass",
+          "Auto Ignition, Matt Enameled Pan Support"
         ]
       }
     ]
   },
   {
     "id": "combo-03",
-    "name": "Super Saver Combo 3",
+    "name": "MAINZ SUPER DHC 60 + HBR 603B",
     "mrp": 69970,
     "price": 38887,
     "freeGift": "Air Fryer",
@@ -1399,27 +1399,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "MAINZ SUPER DHC 60",
         "specs": [
-          "Dry Heat Auto Clean",
-          "Gesture Control",
-          "Baffle Filter",
-          "Suction: 1200 m\u00b3/h"
+          "Filter-less + Dry Heat Auto Clean",
+          "3-Speed Touch Control with Gesture Panel",
+          "Tilted Bottom Design for Better Performance",
+          "Airflow up to 1450 m\u00b3/h, Size: 60cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "HBR 603B",
         "specs": [
-          "3 Brass Burners",
-          "Black Tempered Glass",
-          "Slim Design",
-          "Auto Ignition"
+          "3 Brass Burners (1 Triple Ring + 2 Dual Ring)",
+          "8mm Black Tempered Glass",
+          "Auto Electric Ignition",
+          "Enamelled Matt Finish, Size: 60cm"
         ]
       }
     ]
   },
   {
     "id": "combo-04",
-    "name": "Super Saver Combo 4",
+    "name": "Molin 60 + NYG64B",
     "mrp": 95570,
     "price": 72167,
     "freeGift": "Rice Cooker",
@@ -1431,27 +1431,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "Molin 60",
         "specs": [
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Filter-less Design",
-          "Dry Heat Auto Clean",
-          "Touch Control"
+          "Matt-Finished Granite Texture",
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Curved Front Black Glass Panel with Digital Display",
+          "Airflow up to 1480 m\u00b3/h, Size: 60cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "NYG64B",
         "specs": [
-          "4 Brass Burners with FFD",
-          "8mm Tempered Glass",
-          "Bevelled Edge",
-          "Cast Iron Support"
+          "4 Full Brass High Efficiency Burners",
+          "1 Big Triple + 1 Mini Triple + 2 Dual Ring",
+          "Premium Frosted Black Glass with Round Edges",
+          "Auto Electric Ignition"
         ]
       }
     ]
   },
   {
     "id": "combo-05",
-    "name": "Super Saver Combo 5",
+    "name": "CASTO 60-DC + BLH 604",
     "mrp": 86270,
     "price": 66659,
     "freeGift": "Rice Cooker",
@@ -1463,27 +1463,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "CASTO 60-DC",
         "specs": [
-          "Filter-less Design",
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Dry Heat Auto Clean",
-          "Gesture/Touch"
+          "BLDC Motor, Smart Auto Clean",
+          "Gesture Motion with 8 Speed + Booster",
+          "Black Tempered Glass with Matt Black Finish",
+          "Airflow up to 1480 m\u00b3/h, Size: 60cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "BLH 604",
         "specs": [
-          "4 Full Brass Burners",
-          "Nordic Design Finish",
-          "Cast Iron Support",
-          "Flame Failure Device"
+          "4 Full Brass Burners (1 Big Triple + FFD)",
+          "8mm Black Tempered Glass",
+          "Heavy Duty Cast Iron Pan Support",
+          "Flame Failure Device, Size: 60cm"
         ]
       }
     ]
   },
   {
     "id": "combo-06",
-    "name": "Super Saver Combo 6",
+    "name": "Molin 75 + ASF784",
     "mrp": 96970,
     "price": 67203,
     "freeGift": "Air Fryer",
@@ -1495,27 +1495,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "Molin 75",
         "specs": [
-          "75cm Wide Hood",
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Advanced Auto Clean",
-          "Digital Control Panel"
+          "Matt-Finished Granite Texture",
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Curved Front Black Glass Panel with Digital Display",
+          "Airflow up to 1480 m\u00b3/h, Size: 75cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "ASF784",
         "specs": [
-          "4 Burners (1 Triple Ring)",
-          "SS Edge Moulded Strip",
-          "FFD Safety Protection",
-          "Cast Iron Support"
+          "4 Full Brass Burners (2 Triple Ring + 2 Dual Ring)",
+          "Bevelled Black Tempered Glass",
+          "Enamelled Matt Finish Grills",
+          "Auto Electric Ignition, Size: 78cm"
         ]
       }
     ]
   },
   {
     "id": "combo-07",
-    "name": "Super Saver Combo 7",
+    "name": "LYNN 75 DC + CRH804",
     "mrp": 71070,
     "price": 46339,
     "freeGift": "Rice Cooker",
@@ -1527,27 +1527,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "LYNN 75 DC",
         "specs": [
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Top/Bottom Double Suction",
-          "Filter-less Auto Clean",
-          "Gesture Control"
+          "Filter-less + Dry Heat Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Automatic Open Glass Panel",
+          "Airflow up to 1600 m\u00b3/h, Size: 75cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "CRH804",
         "specs": [
-          "4 Brass Burners",
-          "Extra Wide Glass Panel",
-          "Auto Ignition",
-          "Cast Iron Supports"
+          "Black Coated Tornado Style Burners",
+          "2 Triple Ring + 2 Dual Ring Burners",
+          "8mm Black Tempered Glass",
+          "Auto Ignition, Matt Enameled Pan Support, Size: 80cm"
         ]
       }
     ]
   },
   {
     "id": "combo-08",
-    "name": "Super Saver Combo 8",
+    "name": "VASCO 75DC + INF 804",
     "mrp": 88970,
     "price": 61319,
     "freeGift": "Air Fryer",
@@ -1559,27 +1559,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "VASCO 75DC",
         "specs": [
-          "Filter-less Design",
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Dry Heat Auto Clean",
-          "Touch Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Black Tempered Curve Glass, Matte Black Finish",
+          "Airflow up to 1480 m\u00b3/h, Size: 75cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "INF 804",
         "specs": [
-          "4 Brass Burners with FFD",
-          "Premium Black Glass",
-          "SS Safety Rim Frame",
-          "Cast Iron Support"
+          "4 Full Brass Burners with Full FFD",
+          "2 Triple Ring + 2 Dual Ring Burners",
+          "Heavy Duty Cast Iron Pan Support",
+          "8mm Black Tempered Glass, Size: 80cm"
         ]
       }
     ]
   },
   {
     "id": "combo-09",
-    "name": "Super Saver Combo 9",
+    "name": "CASTO 75-DC + ASF784",
     "mrp": 95970,
     "price": 67237,
     "freeGift": "Air Fryer",
@@ -1591,27 +1591,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "CASTO 75-DC",
         "specs": [
-          "Filter-less Technology",
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Auto Clean",
-          "Gesture Control"
+          "BLDC Motor, Smart Auto Clean",
+          "Gesture Motion with 8 Speed + Booster",
+          "Black Tempered Glass with Matt Black Finish",
+          "Airflow up to 1480 m\u00b3/h, Size: 75cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "ASF784",
         "specs": [
-          "4 Burners with FFD",
-          "SS Edge Trim Protection",
-          "Big Triple Ring Burner",
-          "Cast Iron Support"
+          "4 Full Brass Burners (2 Triple Ring + 2 Dual Ring)",
+          "Bevelled Black Tempered Glass",
+          "Enamelled Matt Finish Grills",
+          "Auto Electric Ignition, Size: 78cm"
         ]
       }
     ]
   },
   {
     "id": "combo-10",
-    "name": "Super Saver Combo 10",
+    "name": "ALBURY 75DC + BLHF 804",
     "mrp": 114970,
     "price": 85742,
     "freeGift": "Coffee Machine",
@@ -1623,27 +1623,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "ALBURY 75DC",
         "specs": [
-          "Filter-less BLDC Hood",
-          "Suction: 1480 m\u00b3/h",
-          "Gestures & Digital Touch",
-          "Dry Auto Clean"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Automatic Glass Opening Panel",
+          "Airflow up to 1280 m\u00b3/h, Size: 75cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "BLHF 804",
         "specs": [
-          "4 Burners with FFD Safety",
-          "Nordic Frosted Glass Finish",
-          "Full Flame Failure Protection",
-          "Cast Iron Support"
+          "4 Full Brass Burners with FFD",
+          "Heavy Duty Cast Iron Pan Support",
+          "8mm Black Tempered Glass, SS Moulded Strip",
+          "Flame Failure Device, Size: 80cm"
         ]
       }
     ]
   },
   {
     "id": "combo-11",
-    "name": "Super Saver Combo 11",
+    "name": "ALBURY(SUPER)75 + MSM 804",
     "mrp": 125970,
     "price": 93693,
     "freeGift": "Air Fryer",
@@ -1655,27 +1655,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "ALBURY(SUPER)75",
         "specs": [
-          "Filter-less BLDC Chimney",
-          "Dual-Vent Extraction System",
-          "Gesture Control Panel",
-          "Auto Clean"
+          "BLDC Motor, Smart Auto Clean",
+          "Gesture Motion 8 Speed + Booster",
+          "Black Tempered Glass, Premium Matt Black Finish",
+          "Airflow up to 1480 m\u00b3/h, Size: 75cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "MSM 804",
         "specs": [
-          "4 Brass Burners with FFD",
-          "8mm Black Tempered Glass",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "4 Full Brass Burners with FFD",
+          "8mm Premium Frosted Black Glass, SS Moulded Strip",
+          "Heavy Duty Cast Iron Pan Support",
+          "Brass Flame Spreader, Size: 80cm"
         ]
       }
     ]
   },
   {
     "id": "combo-12",
-    "name": "Super Saver Combo 12",
+    "name": "Molin 90 + HBR 904A",
     "mrp": 85970,
     "price": 57269,
     "freeGift": "Air Fryer",
@@ -1687,59 +1687,27 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "Molin 90",
         "specs": [
-          "90cm Wide Glass Chimney",
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Auto Clean System",
-          "Digital Display"
+          "Matt-Finished Granite Texture",
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Curved Front Black Glass Panel with Digital Display",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "HBR 904A",
         "specs": [
-          "4 Brass Burners (1 Jumbo)",
-          "Cast Iron Pan Support",
-          "Auto Electric Ignition",
-          "Tempered Glass Panel"
+          "4 Brass Burners (2 Triple Ring + 2 Dual Ring)",
+          "8mm Tempered Glass",
+          "Matt Enameled Pan Support",
+          "Auto Electric Ignition, Size: 90cm"
         ]
       }
     ]
   },
   {
     "id": "combo-13",
-    "name": "Super Saver Combo 13",
-    "mrp": 111970,
-    "price": 70640,
-    "freeGift": "Air Fryer",
-    "freeGiftMrp": 13990,
-    "page": 10,
-    "image": "images/combos/page_10.png",
-    "items": [
-      {
-        "type": "Chimney",
-        "model": "Molin 90",
-        "specs": [
-          "BLDC Motor (1480 m\u00b3/h)",
-          "Advanced Auto Clean",
-          "Digital Glass Display",
-          "Wider Entrance Panel"
-        ]
-      },
-      {
-        "type": "Built-in Hob",
-        "model": "MSM 804",
-        "specs": [
-          "4 Full Brass Burners",
-          "8mm Frosted Tempered Glass",
-          "Cast Iron Support",
-          "Flame Failure Device (FFD)"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "combo-14",
-    "name": "Super Saver Combo 14",
+    "name": "Molin 90 + MSM 804",
     "mrp": 117970,
     "price": 84388,
     "freeGift": "Air Fryer",
@@ -1749,29 +1717,93 @@ const defaultCombos = [
     "items": [
       {
         "type": "Chimney",
-        "model": "ASF94V",
+        "model": "Molin 90",
         "specs": [
-          "High Airflow (1600 m\u00b3/h)",
-          "Dry Heat Auto Clean",
-          "BLDC Motor",
-          "Automatic Glass Opening"
+          "Matt-Finished Granite Texture",
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Curved Front Black Glass Panel with Digital Display",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
+        "model": "MSM 804",
+        "specs": [
+          "4 Full Brass Burners with FFD",
+          "8mm Premium Frosted Black Glass, SS Moulded Strip",
+          "Heavy Duty Cast Iron Pan Support",
+          "Brass Flame Spreader, Size: 80cm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "combo-14",
+    "name": "LYNN 90 DC + ASF94V",
+    "mrp": 111970,
+    "price": 70640,
+    "freeGift": "Air Fryer",
+    "freeGiftMrp": 13990,
+    "page": 10,
+    "image": "images/combos/page_10.png",
+    "items": [
+      {
+        "type": "Chimney",
         "model": "LYNN 90 DC",
         "specs": [
-          "Full FFD Safety Protection",
-          "4 Burners (1 Jumbo Triple Ring)",
-          "SS Edge Protection Moldings",
-          "Cast Iron Pan Supports"
+          "Filter-less + Dry Heat Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Automatic Open Glass Panel",
+          "Airflow up to 1600 m\u00b3/h, Size: 90cm"
+        ]
+      },
+      {
+        "type": "Built-in Hob",
+        "model": "ASF94V",
+        "specs": [
+          "4 Full Brass Burners with Full FFD",
+          "8mm Black Tempered Glass, Bevelled Edge",
+          "Heavy Duty Cast Iron Pan Support",
+          "Flame Failure Device, Size: 90cm"
         ]
       }
     ]
   },
   {
     "id": "combo-15",
-    "name": "Super Saver Combo 15",
+    "name": "LYNN 90 DC + ASF94TM",
+    "mrp": 104570,
+    "price": 74285,
+    "freeGift": "Rice Cooker",
+    "freeGiftMrp": 4590,
+    "page": 11,
+    "image": "images/combos/page_11.png",
+    "items": [
+      {
+        "type": "Chimney",
+        "model": "LYNN 90 DC",
+        "specs": [
+          "Filter-less + Dry Heat Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Automatic Open Glass Panel",
+          "Airflow up to 1600 m\u00b3/h, Size: 90cm"
+        ]
+      },
+      {
+        "type": "Built-in Hob",
+        "model": "ASF94TM",
+        "specs": [
+          "Digital Timer (Auto Flame Off)",
+          "4 Burners (1 Triple 3.5kW + 1 Mini Triple + 2 Dual)",
+          "8mm Tempered Glass, Cast Iron Pan Support",
+          "Bevelled Edge Panel, Size: 90cm"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "combo-16",
+    "name": "BRANDO 90DC + PRS 804",
     "mrp": 104970,
     "price": 71971,
     "freeGift": "Coffee Machine",
@@ -1781,38 +1813,29 @@ const defaultCombos = [
     "items": [
       {
         "type": "Chimney",
-        "model": "LYNN 90 DC",
+        "model": "BRANDO 90DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Matte Black Finish with Curved Edges",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
-      }
-    ]
-  },
-  {
-    "id": "combo-16",
-    "name": "Super Saver Combo 16",
-    "mrp": 104970,
-    "price": 74285,
-    "freeGift": "Rice Cooker",
-    "freeGiftMrp": 4590,
-    "page": 11,
-    "image": "images/combos/page_11.png",
-    "items": [
+      },
       {
-        "type": "Appliance",
-        "model": "ASF94TM",
+        "type": "Built-in Hob",
+        "model": "PRS 804",
         "specs": [
-          "High performance design"
+          "Digital Timer (Auto Flame Off)",
+          "8mm Premium Frosted Black Glass",
+          "Flame Failure Device",
+          "Decorative Black Moulded Strip, Size: 80cm"
         ]
       }
     ]
   },
   {
     "id": "combo-17",
-    "name": "Super Saver Combo 17",
+    "name": "BRANDO 90DC + ASF94M",
     "mrp": 107970,
     "price": 71872,
     "freeGift": "Coffee Machine",
@@ -1821,30 +1844,30 @@ const defaultCombos = [
     "image": "images/combos/page_12.png",
     "items": [
       {
-        "type": "Built-in Hob",
-        "model": "BLHF 804",
-        "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
-        ]
-      },
-      {
         "type": "Chimney",
         "model": "BRANDO 90DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Matte Black Finish with Curved Edges",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
+        ]
+      },
+      {
+        "type": "Built-in Hob",
+        "model": "ASF94M",
+        "specs": [
+          "4 Full Brass Burners with Full FFD",
+          "8mm Black Tempered Glass, Bevelled Edge",
+          "Heavy Duty Cast Iron Pan Support",
+          "Flame Failure Device, Size: 90cm"
         ]
       }
     ]
   },
   {
     "id": "combo-18",
-    "name": "Super Saver Combo 18",
+    "name": "FALCON DX 90 + BLHF 804",
     "mrp": 126970,
     "price": 92012,
     "freeGift": "Coffee Machine",
@@ -1853,30 +1876,33 @@ const defaultCombos = [
     "image": "images/combos/page_12.png",
     "items": [
       {
-        "type": "Appliance",
-        "model": "ASF9AM",
+        "type": "Chimney",
+        "model": "FALCON DX 90",
         "specs": [
-          "High performance design"
+          "BLDC Motor, Smart Auto Clean",
+          "Gesture Motion 8 Speed + Booster",
+          "SS Finish Vent, Automatic Glass Opening Panel",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
-        "model": "FALCON DX 90",
+        "model": "BLHF 804",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "4 Full Brass Burners with FFD",
+          "Heavy Duty Cast Iron Pan Support",
+          "8mm Black Tempered Glass, SS Moulded Strip",
+          "Flame Failure Device, Size: 80cm"
         ]
       }
     ]
   },
   {
     "id": "combo-19",
-    "name": "Super Saver Combo 19",
+    "name": "NEWBURY 90 DC + NYG784G",
     "mrp": 127970,
     "price": 95678,
-    "freeGift": "Air Fryer",
+    "freeGift": "Airfryer",
     "freeGiftMrp": 21990,
     "page": 13,
     "image": "images/combos/page_13.png",
@@ -1885,92 +1911,92 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "NEWBURY 90 DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Top & Bottom Suction (+30% Extraction)",
+          "Touch Panel with 9-Speed Gesture Control",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "NYG784G",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "4 Full Brass High Efficiency Burners",
+          "1 Big Triple + 1 Mini Triple + 2 Dual Ring",
+          "Premium Frosted Gray Glass with Round Edges",
+          "Full Flame Failure Device, Size: 78cm"
         ]
       }
     ]
   },
   {
     "id": "combo-20",
-    "name": "Super Saver Combo 20",
+    "name": "CANARY 90DC + MSM804",
     "mrp": 135970,
     "price": 102897,
-    "freeGift": "Air Fryer",
+    "freeGift": "Airfryer",
     "freeGiftMrp": 21990,
     "page": 13,
     "image": "images/combos/page_13.png",
     "items": [
       {
         "type": "Chimney",
-        "model": "CANARY 9ODC",
+        "model": "CANARY 90DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Wide Extraction Surface with Stoppage Timer",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
-        "model": "MSM804",
+        "model": "MSM 804",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "4 Full Brass Burners with FFD",
+          "8mm Premium Frosted Black Glass, SS Moulded Strip",
+          "Heavy Duty Cast Iron Pan Support",
+          "Brass Flame Spreader, Size: 80cm"
         ]
       }
     ]
   },
   {
     "id": "combo-21",
-    "name": "Super Saver Combo 21",
-    "mrp": 130970,
+    "name": "CANARY 90DC + MSM865",
+    "mrp": 146970,
     "price": 111895,
-    "freeGift": "Air Fryer",
+    "freeGift": "Airfryer",
     "freeGiftMrp": 21990,
     "page": 14,
     "image": "images/combos/page_14.png",
     "items": [
       {
         "type": "Chimney",
-        "model": "ALBURY(SUPER)9O",
+        "model": "CANARY 90DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Wide Extraction Surface with Stoppage Timer",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "MSM865",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "5 Full Brass Burners with FFD",
+          "1 Big Triple + 2 Mini Triple + 2 Dual Ring",
+          "8mm Premium Frosted Black Glass, SS Moulded Strip",
+          "Heavy Duty Cast Iron Pan Support"
         ]
       }
     ]
   },
   {
     "id": "combo-22",
-    "name": "Super Saver Combo 22",
-    "mrp": 146970,
+    "name": "ALBURY(SUPER)90 + MSM 94DF",
+    "mrp": 130970,
     "price": 99058,
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
@@ -1978,34 +2004,34 @@ const defaultCombos = [
     "image": "images/combos/page_14.png",
     "items": [
       {
-        "type": "Built-in Hob",
-        "model": "MSM 94DF",
+        "type": "Chimney",
+        "model": "ALBURY(SUPER)90",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "BLDC Motor, Smart Auto Clean",
+          "Gesture Motion 8 Speed + Booster",
+          "Black Tempered Glass, Premium Matt Black Finish",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
-        "type": "Chimney",
-        "model": "CANARY 9ODC",
+        "type": "Built-in Hob",
+        "model": "MSM 94DF",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "4 Full Brass Burners with FFD",
+          "8mm Premium Frosted Black Glass, SS Moulded Strip",
+          "Heavy Duty Cast Iron Pan Support",
+          "Brass Flame Spreader, Size: 90cm"
         ]
       }
     ]
   },
   {
     "id": "combo-23",
-    "name": "Super Saver Combo 23",
+    "name": "CASTO 60-DC + KAB 60",
     "mrp": 137970,
     "price": 101940,
-    "freeGift": "Rice Cooker",
-    "freeGiftMrp": 4590,
+    "freeGift": "Airfryer",
+    "freeGiftMrp": 21990,
     "page": 15,
     "image": "images/combos/page_15.png",
     "items": [
@@ -2013,57 +2039,61 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "CASTO 60-DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "BLDC Motor, Smart Auto Clean",
+          "Gesture Motion with 8 Speed + Booster",
+          "Black Tempered Glass with Matt Black Finish",
+          "Airflow up to 1480 m\u00b3/h, Size: 60cm"
         ]
       },
       {
-        "type": "Chimney",
-        "model": "FALMARC DHC 90-A",
+        "type": "Cooking Range",
+        "model": "KAB 60",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "60cm Cooking Range with Electric Oven (60L)",
+          "4 Gas Burners with 1 Big Triple Ring",
+          "Convection Fan, Thermostat 250\u00b0C",
+          "Double Glass Oven Door, Auto Electric Ignition"
         ]
       }
     ]
   },
   {
     "id": "combo-24",
-    "name": "Super Saver Combo 24",
+    "name": "FALMARC DHC 90-A + KGM 90",
     "mrp": 229070,
     "price": 191219,
-    "freeGift": "Air Fryer",
-    "freeGiftMrp": 21990,
+    "freeGift": "Rice Cooker",
+    "freeGiftMrp": 4590,
     "page": 15,
     "image": "images/combos/page_15.png",
     "items": [
       {
-        "type": "Built-in Oven",
-        "model": "KAB 60",
+        "type": "Chimney",
+        "model": "FALMARC DHC 90-A",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "Filter-less + Dry Heat Auto Clean",
+          "Automatic Glass Opening, Dual Vent Suction",
+          "Gesture/Touch Controls with Digital Display",
+          "Airflow up to 1480 Nm\u00b3/h, Size: 90cm"
         ]
       },
       {
-        "type": "Appliance",
+        "type": "Cooking Range",
         "model": "KGM 90",
         "specs": [
-          "High performance design"
+          "90cm Cooking Range with Electric Oven (100L)",
+          "5 Gas with 1 Big Triple Ring Sabaf Burners",
+          "Heavy Duty Cast Iron Pan Support",
+          "Dish Warmer, Convection Fan, Thermostat 250\u00b0C"
         ]
       }
     ]
   },
   {
     "id": "combo-25",
-    "name": "Super Saver Combo 25",
-    "mrp": 136970,
-    "price": 105271,
+    "name": "OV81ATMN + KB5A",
+    "mrp": 187570,
+    "price": 156008,
     "freeGift": "Rice Cooker",
     "freeGiftMrp": 4590,
     "page": 16,
@@ -2071,55 +2101,61 @@ const defaultCombos = [
     "items": [
       {
         "type": "Built-in Oven",
-        "model": "OVBITCBL",
+        "model": "OV81ATMN",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "60cm Electric Oven, Extra Large Cavity 81L",
+          "True Convection + Air Fry Mode",
+          "Smart TFT Touch, Wi-Fi & App Control",
+          "Triple Layer Glass Door, Child Lock"
         ]
       },
       {
-        "type": "Built-in Oven",
-        "model": "OV8IATMN",
+        "type": "Built-in Microwave",
+        "model": "KB5A",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "Premium Matt Black Finish, Capacity 34L",
+          "Microwave/Grill/Combi/Convection",
+          "Auto Cooking Menu & Auto Defrost",
+          "Mirror Glass Finish, Thermostat 250\u00b0C"
         ]
       }
     ]
   },
   {
     "id": "combo-26",
-    "name": "Super Saver Combo 26",
-    "mrp": 187570,
-    "price": 156008,
-    "freeGift": "Air Fryer",
+    "name": "OV81TCBL + KMW HN 6-BLK",
+    "mrp": 136970,
+    "price": 105271,
+    "freeGift": "Airfryer",
     "freeGiftMrp": 17990,
     "page": 16,
     "image": "images/combos/page_16.png",
     "items": [
       {
-        "type": "Appliance",
-        "model": "KBSA",
+        "type": "Built-in Oven",
+        "model": "OV81TCBL",
         "specs": [
-          "High performance design"
+          "60cm Electric Oven, Extra Large Cavity 81L",
+          "Black Reflective Glass Fascia",
+          "Full Touch Controls, Memory Function",
+          "3 Layer Glass Door, Thermostat 250\u00b0C"
         ]
       },
       {
         "type": "Built-in Microwave",
         "model": "KMW HN 6-BLK",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "Full Black Tempered Glass, Touch Controls",
+          "Capacity 28L, Microwave/Grill/Combi/Convection",
+          "Push Door Opening Button",
+          "Thermostat 250\u00b0C, Digital Clock"
         ]
       }
     ]
   },
   {
     "id": "combo-27",
-    "name": "Super Saver Combo 27",
+    "name": "OV 81 GIKFAFR + KMWHN6",
     "mrp": 135970,
     "price": 106971,
     "freeGift": "Coffee Machine",
@@ -2128,28 +2164,30 @@ const defaultCombos = [
     "image": "images/combos/page_17.png",
     "items": [
       {
-        "type": "Built-in Microwave",
-        "model": "KMWHN6",
+        "type": "Built-in Oven",
+        "model": "OV 81 GIKFAFR",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "60cm Electric Oven, Extra Large Cavity 81L",
+          "Air Fryer Function for Healthy Cooking",
+          "Black Reflective Glass, Rotary Electronic Controls",
+          "3 Layer Glass Door, Internal Cooling Fan"
         ]
       },
       {
-        "type": "Built-in Oven",
-        "model": "OVBITCBLAFR",
+        "type": "Built-in Microwave",
+        "model": "KMWHN6",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "Full Black Tempered Glass, Touch Controls",
+          "Capacity 28L, Microwave/Grill/Combi/Convection",
+          "Push Door Opening Button",
+          "Thermostat 250\u00b0C, Digital Clock"
         ]
       }
     ]
   },
   {
     "id": "combo-28",
-    "name": "Super Saver Combo 28",
+    "name": "OV81TCBLAFR + KMWHN6",
     "mrp": 140970,
     "price": 109804,
     "freeGift": "Coffee Machine",
@@ -2158,30 +2196,64 @@ const defaultCombos = [
     "image": "images/combos/page_17.png",
     "items": [
       {
-        "type": "Built-in Microwave",
-        "model": "KMWHN6",
+        "type": "Built-in Oven",
+        "model": "OV81TCBLAFR",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "60cm Electric Oven, Extra Large Cavity 81L",
+          "Air Fryer Function for Healthy Cooking",
+          "Full Touch Controls, Memory Function, Child Lock",
+          "3 Layer Glass Door, Thermostat 250\u00b0C"
         ]
       },
       {
-        "type": "Built-in Oven",
-        "model": "OV 81 GIKFAFR",
+        "type": "Built-in Microwave",
+        "model": "KMWHN6",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "Full Black Tempered Glass, Touch Controls",
+          "Capacity 28L, Microwave/Grill/Combi/Convection",
+          "Push Door Opening Button",
+          "Thermostat 250\u00b0C, Digital Clock"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "combo-29",
+    "name": "OV81STF13 + KB4A",
+    "mrp": 163970,
+    "price": 126330,
+    "freeGift": "Airfryer",
+    "freeGiftMrp": 17990,
+    "page": 18,
+    "image": "images/combos/page_18.png",
+    "items": [
+      {
+        "type": "Built-in Oven",
+        "model": "OV81STF13",
+        "specs": [
+          "60cm Electric Oven, True Convection, 81L",
+          "Catalytic Cleaning, Touch + LED Lit Knob Control",
+          "Half Mirror Glass Door & Control Panel",
+          "Triple Layer Glass Door, Child Lock"
+        ]
+      },
+      {
+        "type": "Built-in Microwave",
+        "model": "KB4A",
+        "specs": [
+          "Anti-Finger Stainless Finish, Capacity 28L",
+          "Microwave/Grill/Combination/Convection",
+          "Auto Cooking Menu & Auto Defrost",
+          "Light Mirror Glass, Thermostat 250\u00b0C"
         ]
       }
     ]
   },
   {
     "id": "combo-30",
-    "name": "Super Saver Combo 30",
-    "mrp": 163970,
-    "price": 126330,
+    "name": "CSOV6 BSN + MW34G6F -B",
+    "mrp": 218970,
+    "price": 166246,
     "freeGift": "Air Fryer",
     "freeGiftMrp": 21990,
     "page": 18,
@@ -2189,53 +2261,29 @@ const defaultCombos = [
     "items": [
       {
         "type": "Built-in Oven",
-        "model": "OV8ISTF13",
-        "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
-        ]
-      },
-      {
-        "type": "Appliance",
-        "model": "KBAA",
-        "specs": [
-          "High performance design"
-        ]
-      }
-    ]
-  },
-  {
-    "id": "combo-29",
-    "name": "Super Saver Combo 29",
-    "mrp": 218970,
-    "price": 166246,
-    "freeGift": "Air Fryer",
-    "freeGiftMrp": 17990,
-    "page": 18,
-    "image": "images/combos/page_18.png",
-    "items": [
-      {
-        "type": "Appliance",
         "model": "CSOV6 BSN",
         "specs": [
-          "High performance design"
+          "60cm Electric Oven, True Convection, 73L",
+          "Black Glass Fascia, Black Steel Finish",
+          "Sensor Touch Control, Memory Function",
+          "Triple Layer Glass Door, Child Lock"
         ]
       },
       {
         "type": "Built-in Microwave",
-        "model": "MWBAG6F -B",
+        "model": "MW34G6F -B",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "Premium Gray/Black Glass Finish",
+          "Touch + Pop-up Knob Control, Capacity 34L",
+          "Microwave/Grill/Combination/Convection",
+          "Child Lock, Convection 2300W"
         ]
       }
     ]
   },
   {
     "id": "combo-31",
-    "name": "Super Saver Combo 31",
+    "name": "OV72G6F + MW34G6F",
     "mrp": 219470,
     "price": 169774,
     "freeGift": "Air Fryer",
@@ -2245,27 +2293,29 @@ const defaultCombos = [
     "items": [
       {
         "type": "Built-in Oven",
-        "model": "OV7ZG6F",
+        "model": "OV72G6F",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "3D Hot Air Technology, 72L Cavity",
+          "Premium Gray Glass, Stainless Steel Handle",
+          "Soft Close + 3 Layer Glass Door",
+          "Mechanical Push Knobs + Touch Control, Energy A+"
         ]
       },
       {
         "type": "Built-in Microwave",
-        "model": "MWBAG6F",
+        "model": "MW34G6F",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "Premium Gray/Black Glass Finish",
+          "Touch + Pop-up Knob Control, Capacity 34L",
+          "Microwave/Grill/Combination/Convection",
+          "Child Lock, Convection 2300W"
         ]
       }
     ]
   },
   {
     "id": "combo-32",
-    "name": "Super Saver Combo 32",
+    "name": "OV81AMSTF + MW34G6F -B",
     "mrp": 284970,
     "price": 224850,
     "freeGift": "Air Fryer",
@@ -2275,27 +2325,29 @@ const defaultCombos = [
     "items": [
       {
         "type": "Built-in Oven",
-        "model": "OVBIAMSTF",
+        "model": "OV81AMSTF",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "60cm Electric Oven, True Convection, 81L",
+          "Catalytic Cleaning, Touch + LED Lit Knob Control",
+          "Half Mirror Glass Door & Control Panel",
+          "Triple Layer Glass Door, Child Lock"
         ]
       },
       {
         "type": "Built-in Microwave",
-        "model": "MWBAG6F -B",
+        "model": "MW34G6F -B",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "Premium Gray/Black Glass Finish",
+          "Touch + Pop-up Knob Control, Capacity 34L",
+          "Microwave/Grill/Combination/Convection",
+          "Child Lock, Convection 2300W"
         ]
       }
     ]
   },
   {
     "id": "combo-33",
-    "name": "Super Saver Combo 33",
+    "name": "LYNN 90 DC + BLHF804 + OV81TCBLAFR + KMWHN6",
     "mrp": 237950,
     "price": 174116,
     "freeGift": "Coffee Machine",
@@ -2307,45 +2359,45 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "LYNN 90 DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Dry Heat Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Automatic Open Glass Panel",
+          "Airflow up to 1600 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
-        "model": "BLHF804",
+        "model": "BLHF 804",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "4 Full Brass Burners with FFD",
+          "Heavy Duty Cast Iron Pan Support",
+          "8mm Black Tempered Glass, SS Moulded Strip",
+          "Flame Failure Device, Size: 80cm"
         ]
       },
       {
         "type": "Built-in Oven",
-        "model": "OVBITCBLAFR",
+        "model": "OV81TCBLAFR",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "60cm Electric Oven, 81L, Air Fryer Function",
+          "Full Touch Controls, Memory Function",
+          "3 Layer Glass Door, Thermostat 250\u00b0C"
         ]
       },
       {
         "type": "Built-in Microwave",
         "model": "KMWHN6",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "28L, Microwave/Grill/Combi/Convection",
+          "Full Black Tempered Glass, Touch Controls",
+          "Thermostat 250\u00b0C"
         ]
       }
     ]
   },
   {
     "id": "combo-34",
-    "name": "Super Saver Combo 34",
+    "name": "BRANDO 90DC + MSM 804X + OV81GIKAFR + KMWHN6",
     "mrp": 242950,
     "price": 183350,
     "freeGift": "Coffee Machine",
@@ -2357,48 +2409,48 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "BRANDO 90DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Matte Black Finish with Curved Edges",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "MSM 804X",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "Full Brass Burners with FFD",
+          "Premium Frosted Black Glass",
+          "Heavy Duty Cast Iron Pan Support",
+          "Auto Electric Ignition"
         ]
       },
       {
         "type": "Built-in Oven",
-        "model": "OVBIGIKAFR",
+        "model": "OV81GIKAFR",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "60cm Electric Oven, 81L, Air Fryer Function",
+          "Black Reflective Glass, Rotary Controls",
+          "3 Layer Glass Door, Internal Cooling Fan"
         ]
       },
       {
         "type": "Built-in Microwave",
         "model": "KMWHN6",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "28L, Microwave/Grill/Combi/Convection",
+          "Full Black Tempered Glass, Touch Controls",
+          "Thermostat 250\u00b0C"
         ]
       }
     ]
   },
   {
     "id": "combo-35",
-    "name": "Super Saver Combo 35",
+    "name": "NEWBURY 90 DC + NYG784G + OV72G6F + MW34G6F",
     "mrp": 321450,
     "price": 248464,
-    "freeGift": "Air Fryer",
+    "freeGift": "Airfryer",
     "freeGiftMrp": 17990,
     "page": 22,
     "image": "images/combos/page_22.png",
@@ -2407,45 +2459,45 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "NEWBURY 90 DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Top & Bottom Suction (+30% Extraction)",
+          "Touch Panel with 9-Speed Gesture Control",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "NYG784G",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "4 Full Brass High Efficiency Burners",
+          "Premium Frosted Gray Glass with Round Edges",
+          "Full Flame Failure Device",
+          "Size: 78cm"
         ]
       },
       {
         "type": "Built-in Oven",
-        "model": "OVZZG6F",
+        "model": "OV72G6F",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "3D Hot Air Technology, 72L Cavity",
+          "Premium Gray Glass, Soft Close Door",
+          "Mechanical Push Knobs + Touch Control"
         ]
       },
       {
         "type": "Built-in Microwave",
-        "model": "MWBAG6F",
+        "model": "MW34G6F",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "Premium Gray Glass, 34L Capacity",
+          "Touch + Pop-up Knob, Convection 2300W",
+          "Child Lock"
         ]
       }
     ]
   },
   {
     "id": "combo-36",
-    "name": "Super Saver Combo 36",
+    "name": "BRANDO 90DC + MSM 804X + OV81GIKAFR + KMWHN6 + DWFIBI",
     "mrp": 308240,
     "price": 230091,
     "freeGift": "Coffee Machine",
@@ -2457,46 +2509,46 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "BRANDO 90DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Matte Black Finish with Curved Edges",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "MSM 804X",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "Full Brass Burners with FFD",
+          "Premium Frosted Black Glass",
+          "Heavy Duty Cast Iron Pan Support",
+          "Auto Electric Ignition"
         ]
       },
       {
         "type": "Built-in Oven",
-        "model": "OV8IGIKAFR",
+        "model": "OV81GIKAFR",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "60cm Electric Oven, 81L, Air Fryer Function",
+          "Black Reflective Glass, Rotary Controls",
+          "3 Layer Glass Door"
         ]
       },
       {
         "type": "Built-in Microwave",
         "model": "KMWHN6",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "28L, Microwave/Grill/Combi/Convection",
+          "Full Black Tempered Glass, Touch Controls",
+          "Thermostat 250\u00b0C"
         ]
       },
       {
         "type": "Dishwasher",
         "model": "DWFIBI",
         "specs": [
+          "Built-in Dishwasher",
           "Multiple Wash Programs",
-          "Water Spray Arm Technology",
           "Eco-friendly Mode"
         ]
       }
@@ -2504,7 +2556,7 @@ const defaultCombos = [
   },
   {
     "id": "combo-37",
-    "name": "Super Saver Combo 37",
+    "name": "CANARY 90DC + PRS 804 + OV81ZNSCN + KB5A + DW INTRA + KRF250FFBI",
     "mrp": 612930,
     "price": 483447,
     "freeGift": "Wine Cooler",
@@ -2514,45 +2566,59 @@ const defaultCombos = [
     "items": [
       {
         "type": "Chimney",
-        "model": "CANARY 9ODC",
+        "model": "CANARY 90DC",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
-        ]
-      },
-      {
-        "type": "Built-in Oven",
-        "model": "OV8IZNSCN",
-        "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "PRS 804",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "Digital Timer, Frosted Black Glass",
+          "Flame Failure Device",
+          "Size: 80cm"
         ]
       },
       {
-        "type": "Appliance",
-        "model": "KBSA",
+        "type": "Built-in Oven",
+        "model": "OV81ZNSCN",
         "specs": [
-          "High performance design"
+          "60cm Electric Oven, 81L Cavity",
+          "Premium Finish, True Convection"
+        ]
+      },
+      {
+        "type": "Built-in Microwave",
+        "model": "KB5A",
+        "specs": [
+          "34L, Microwave/Grill/Combi/Convection",
+          "Premium Matt Black, Wi-Fi Enabled"
+        ]
+      },
+      {
+        "type": "Dishwasher",
+        "model": "DW INTRA",
+        "specs": [
+          "Multiple Wash Programs",
+          "Eco-friendly Mode"
+        ]
+      },
+      {
+        "type": "Refrigerator",
+        "model": "KRF250FFBI",
+        "specs": [
+          "Built-in Refrigerator",
+          "Premium Design"
         ]
       }
     ]
   },
   {
     "id": "combo-38",
-    "name": "Super Saver Combo 38",
+    "name": "CANARY 90 DC (IS) + MSM 804X + OV81ZNSCN + KB5A + DW INTRA + KRF250FFBI",
     "mrp": 661930,
     "price": 524564,
     "freeGift": "Wine Cooler",
@@ -2564,36 +2630,34 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "CANARY 90 DC (IS)",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
-        ]
-      },
-      {
-        "type": "Built-in Oven",
-        "model": "OVBIZNSCN",
-        "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "Filter-less + Smart Auto Clean (BLDC Motor)",
+          "Gesture Motion 8 Speed + Booster",
+          "Airflow up to 1480 m\u00b3/h, Size: 90cm"
         ]
       },
       {
         "type": "Built-in Hob",
         "model": "MSM 804X",
         "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
+          "Full Brass Burners with FFD",
+          "Premium Frosted Black Glass",
+          "Heavy Duty Cast Iron Pan Support"
         ]
       },
       {
-        "type": "Appliance",
-        "model": "KBSA",
+        "type": "Built-in Oven",
+        "model": "OV81ZNSCN",
         "specs": [
-          "High performance design"
+          "60cm Electric Oven, 81L Cavity",
+          "Premium Finish, True Convection"
+        ]
+      },
+      {
+        "type": "Built-in Microwave",
+        "model": "KB5A",
+        "specs": [
+          "34L, Microwave/Grill/Combi/Convection",
+          "Premium Matt Black, Wi-Fi Enabled"
         ]
       },
       {
@@ -2601,15 +2665,22 @@ const defaultCombos = [
         "model": "DW INTRA",
         "specs": [
           "Multiple Wash Programs",
-          "Water Spray Arm Technology",
           "Eco-friendly Mode"
+        ]
+      },
+      {
+        "type": "Refrigerator",
+        "model": "KRF250FFBI",
+        "specs": [
+          "Built-in Refrigerator",
+          "Premium Design"
         ]
       }
     ]
   },
   {
     "id": "combo-39",
-    "name": "Super Saver Combo 39",
+    "name": "TOWNVILLE 90 (IS) + BLHF 865 + OV81AMSTF + MW34G6F -B + DW INTRA + KRF250FFBI",
     "mrp": 810930,
     "price": 645148,
     "freeGift": "Wine Cooler",
@@ -2618,41 +2689,39 @@ const defaultCombos = [
     "image": "images/combos/page_26.png",
     "items": [
       {
-        "type": "Built-in Hob",
-        "model": "BLHF 865",
-        "specs": [
-          "Full Brass Burners",
-          "Tempered Glass Top",
-          "Auto Electric Ignition",
-          "Cast Iron Support"
-        ]
-      },
-      {
         "type": "Chimney",
         "model": "TOWNVILLE 90 (IS)",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Filter-less + Smart Auto Clean",
+          "Powerful Airflow, Gesture Control",
+          "Size: 90cm"
+        ]
+      },
+      {
+        "type": "Built-in Hob",
+        "model": "BLHF 865",
+        "specs": [
+          "Full Brass Burners with FFD",
+          "Heavy Duty Cast Iron Pan Support",
+          "8mm Tempered Glass, Auto Ignition"
         ]
       },
       {
         "type": "Built-in Oven",
-        "model": "OVBIAMSTF",
+        "model": "OV81AMSTF",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "60cm Electric Oven, True Convection, 81L",
+          "Catalytic Cleaning, LED Lit Knob Control",
+          "Triple Layer Glass Door"
         ]
       },
       {
         "type": "Built-in Microwave",
-        "model": "MWB4G6F -B",
+        "model": "MW34G6F -B",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
+          "Premium Gray/Black Glass, 34L",
+          "Touch + Pop-up Knob, Convection 2300W",
+          "Child Lock"
         ]
       },
       {
@@ -2660,15 +2729,22 @@ const defaultCombos = [
         "model": "DW INTRA",
         "specs": [
           "Multiple Wash Programs",
-          "Water Spray Arm Technology",
           "Eco-friendly Mode"
+        ]
+      },
+      {
+        "type": "Refrigerator",
+        "model": "KRF250FFBI",
+        "specs": [
+          "Built-in Refrigerator",
+          "Premium Design"
         ]
       }
     ]
   },
   {
     "id": "combo-40",
-    "name": "Super Saver Combo 40",
+    "name": "FLORA TWIN IS + MARMOR 1104 + CFFBI 6 + OV81AMSTF + MW34G6F -B + DW INTRA + KRF250FFBI",
     "mrp": 1085920,
     "price": 864308,
     "freeGift": "Wine Cooler",
@@ -2677,38 +2753,47 @@ const defaultCombos = [
     "image": "images/combos/page_27.png",
     "items": [
       {
-        "type": "Appliance",
+        "type": "Chimney",
+        "model": "FLORA TWIN IS",
+        "specs": [
+          "Filter-less + Smart Auto Clean",
+          "Powerful Airflow, Gesture Control",
+          "Premium Island Design"
+        ]
+      },
+      {
+        "type": "Built-in Hob",
         "model": "MARMOR 1104",
         "specs": [
-          "High performance design"
+          "Full Brass Burners",
+          "Premium Tempered Glass",
+          "Auto Electric Ignition"
+        ]
+      },
+      {
+        "type": "Coffee Machine",
+        "model": "CFFBI 6",
+        "specs": [
+          "Built-in Coffee Machine",
+          "Premium Design"
         ]
       },
       {
         "type": "Built-in Oven",
-        "model": "OVBIAMSTF",
+        "model": "OV81AMSTF",
         "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
+          "60cm Electric Oven, True Convection, 81L",
+          "Catalytic Cleaning, LED Lit Knob Control",
+          "Triple Layer Glass Door"
         ]
       },
       {
         "type": "Built-in Microwave",
-        "model": "MW3AG6F -B",
+        "model": "MW34G6F -B",
         "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
-        ]
-      },
-      {
-        "type": "Chimney",
-        "model": "FLORA TWIN IS",
-        "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
+          "Premium Gray/Black Glass, 34L",
+          "Touch + Pop-up Knob, Convection 2300W",
+          "Child Lock"
         ]
       },
       {
@@ -2716,15 +2801,22 @@ const defaultCombos = [
         "model": "DW INTRA",
         "specs": [
           "Multiple Wash Programs",
-          "Water Spray Arm Technology",
           "Eco-friendly Mode"
+        ]
+      },
+      {
+        "type": "Refrigerator",
+        "model": "KRF250FFBI",
+        "specs": [
+          "Built-in Refrigerator",
+          "Premium Design"
         ]
       }
     ]
   },
   {
     "id": "combo-41",
-    "name": "Super Saver Combo 41",
+    "name": "ZEBRA 41 (IS) + MSM 604 + CFFBI 6 + OV81AMSTF + MW34G6F -B + DW INTRA + KRF250FFBI",
     "mrp": 1112920,
     "price": 885779,
     "freeGift": "Wine Cooler",
@@ -2736,37 +2828,9 @@ const defaultCombos = [
         "type": "Chimney",
         "model": "ZEBRA 41 (IS)",
         "specs": [
-          "Filter-less Technology",
-          "Powerful Airflow",
-          "Smart Auto Clean",
-          "Gesture Control"
-        ]
-      },
-      {
-        "type": "Built-in Oven",
-        "model": "OVBIAMSTF",
-        "specs": [
-          "Large Cavity Volume",
-          "Convection Baking",
-          "Premium Glass Finish"
-        ]
-      },
-      {
-        "type": "Built-in Microwave",
-        "model": "MW3AG6F -B",
-        "specs": [
-          "Microwave & Grill Combi",
-          "Smart Digital Control",
-          "Child Safety Lock"
-        ]
-      },
-      {
-        "type": "Dishwasher",
-        "model": "DW INTRA",
-        "specs": [
-          "Multiple Wash Programs",
-          "Water Spray Arm Technology",
-          "Eco-friendly Mode"
+          "Filter-less + Smart Auto Clean",
+          "Powerful Airflow, Gesture Control",
+          "Premium Island Design"
         ]
       },
       {
@@ -2774,9 +2838,51 @@ const defaultCombos = [
         "model": "MSM 604",
         "specs": [
           "Full Brass Burners",
-          "Tempered Glass Top",
+          "Premium Tempered Glass",
           "Auto Electric Ignition",
-          "Cast Iron Support"
+          "Cast Iron Pan Support"
+        ]
+      },
+      {
+        "type": "Coffee Machine",
+        "model": "CFFBI 6",
+        "specs": [
+          "Built-in Coffee Machine",
+          "Premium Design"
+        ]
+      },
+      {
+        "type": "Built-in Oven",
+        "model": "OV81AMSTF",
+        "specs": [
+          "60cm Electric Oven, True Convection, 81L",
+          "Catalytic Cleaning, LED Lit Knob Control",
+          "Triple Layer Glass Door"
+        ]
+      },
+      {
+        "type": "Built-in Microwave",
+        "model": "MW34G6F -B",
+        "specs": [
+          "Premium Gray/Black Glass, 34L",
+          "Touch + Pop-up Knob, Convection 2300W",
+          "Child Lock"
+        ]
+      },
+      {
+        "type": "Dishwasher",
+        "model": "DW INTRA",
+        "specs": [
+          "Multiple Wash Programs",
+          "Eco-friendly Mode"
+        ]
+      },
+      {
+        "type": "Refrigerator",
+        "model": "KRF250FFBI",
+        "specs": [
+          "Built-in Refrigerator",
+          "Premium Design"
         ]
       }
     ]
