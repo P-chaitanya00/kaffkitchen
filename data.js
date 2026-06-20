@@ -1329,7 +1329,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 4,
-    "image": "images/combos/page_4.png",
+    "image": "images/combos/page_4_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1361,7 +1361,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 4,
-    "image": "images/combos/page_4.png",
+    "image": "images/combos/page_4_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1393,7 +1393,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 5,
-    "image": "images/combos/page_5.png",
+    "image": "images/combos/page_5_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1425,7 +1425,7 @@ const defaultCombos = [
     "freeGift": "Rice Cooker",
     "freeGiftMrp": 4590,
     "page": 5,
-    "image": "images/combos/page_5.png",
+    "image": "images/combos/page_5_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1457,7 +1457,7 @@ const defaultCombos = [
     "freeGift": "Rice Cooker",
     "freeGiftMrp": 4590,
     "page": 6,
-    "image": "images/combos/page_6.png",
+    "image": "images/combos/page_6_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1489,7 +1489,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 6,
-    "image": "images/combos/page_6.png",
+    "image": "images/combos/page_6_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1521,7 +1521,7 @@ const defaultCombos = [
     "freeGift": "Rice Cooker",
     "freeGiftMrp": 4590,
     "page": 7,
-    "image": "images/combos/page_7.png",
+    "image": "images/combos/page_7_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1553,7 +1553,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 7,
-    "image": "images/combos/page_7.png",
+    "image": "images/combos/page_7_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1585,7 +1585,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 8,
-    "image": "images/combos/page_8.png",
+    "image": "images/combos/page_8_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1617,7 +1617,7 @@ const defaultCombos = [
     "freeGift": "Coffee Machine",
     "freeGiftMrp": 12990,
     "page": 8,
-    "image": "images/combos/page_8.png",
+    "image": "images/combos/page_8_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1649,7 +1649,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 9,
-    "image": "images/combos/page_9.png",
+    "image": "images/combos/page_9_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1681,7 +1681,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 9,
-    "image": "images/combos/page_9.png",
+    "image": "images/combos/page_9_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1713,7 +1713,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 10,
-    "image": "images/combos/page_10.png",
+    "image": "images/combos/page_10_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1745,7 +1745,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 10,
-    "image": "images/combos/page_10.png",
+    "image": "images/combos/page_10_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1777,7 +1777,7 @@ const defaultCombos = [
     "freeGift": "Rice Cooker",
     "freeGiftMrp": 4590,
     "page": 11,
-    "image": "images/combos/page_11.png",
+    "image": "images/combos/page_11_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1809,7 +1809,7 @@ const defaultCombos = [
     "freeGift": "Coffee Machine",
     "freeGiftMrp": 12990,
     "page": 11,
-    "image": "images/combos/page_11.png",
+    "image": "images/combos/page_11_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1841,7 +1841,7 @@ const defaultCombos = [
     "freeGift": "Coffee Machine",
     "freeGiftMrp": 12990,
     "page": 12,
-    "image": "images/combos/page_12.png",
+    "image": "images/combos/page_12_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1873,7 +1873,7 @@ const defaultCombos = [
     "freeGift": "Coffee Machine",
     "freeGiftMrp": 12990,
     "page": 12,
-    "image": "images/combos/page_12.png",
+    "image": "images/combos/page_12_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1905,7 +1905,7 @@ const defaultCombos = [
     "freeGift": "Airfryer",
     "freeGiftMrp": 21990,
     "page": 13,
-    "image": "images/combos/page_13.png",
+    "image": "images/combos/page_13_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -1937,7 +1937,7 @@ const defaultCombos = [
     "freeGift": "Airfryer",
     "freeGiftMrp": 21990,
     "page": 13,
-    "image": "images/combos/page_13.png",
+    "image": "images/combos/page_13_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -1969,7 +1969,7 @@ const defaultCombos = [
     "freeGift": "Airfryer",
     "freeGiftMrp": 21990,
     "page": 14,
-    "image": "images/combos/page_14.png",
+    "image": "images/combos/page_14_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -2001,7 +2001,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 13990,
     "page": 14,
-    "image": "images/combos/page_14.png",
+    "image": "images/combos/page_14_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -2033,7 +2033,7 @@ const defaultCombos = [
     "freeGift": "Airfryer",
     "freeGiftMrp": 21990,
     "page": 15,
-    "image": "images/combos/page_15.png",
+    "image": "images/combos/page_15_left.png",
     "items": [
       {
         "type": "Chimney",
@@ -2065,7 +2065,7 @@ const defaultCombos = [
     "freeGift": "Rice Cooker",
     "freeGiftMrp": 4590,
     "page": 15,
-    "image": "images/combos/page_15.png",
+    "image": "images/combos/page_15_right.png",
     "items": [
       {
         "type": "Chimney",
@@ -2097,7 +2097,7 @@ const defaultCombos = [
     "freeGift": "Rice Cooker",
     "freeGiftMrp": 4590,
     "page": 16,
-    "image": "images/combos/page_16.png",
+    "image": "images/combos/page_16_left.png",
     "items": [
       {
         "type": "Built-in Oven",
@@ -2129,7 +2129,7 @@ const defaultCombos = [
     "freeGift": "Airfryer",
     "freeGiftMrp": 17990,
     "page": 16,
-    "image": "images/combos/page_16.png",
+    "image": "images/combos/page_16_right.png",
     "items": [
       {
         "type": "Built-in Oven",
@@ -2161,7 +2161,7 @@ const defaultCombos = [
     "freeGift": "Coffee Machine",
     "freeGiftMrp": 12990,
     "page": 17,
-    "image": "images/combos/page_17.png",
+    "image": "images/combos/page_17_left.png",
     "items": [
       {
         "type": "Built-in Oven",
@@ -2193,7 +2193,7 @@ const defaultCombos = [
     "freeGift": "Coffee Machine",
     "freeGiftMrp": 12990,
     "page": 17,
-    "image": "images/combos/page_17.png",
+    "image": "images/combos/page_17_right.png",
     "items": [
       {
         "type": "Built-in Oven",
@@ -2225,7 +2225,7 @@ const defaultCombos = [
     "freeGift": "Airfryer",
     "freeGiftMrp": 17990,
     "page": 18,
-    "image": "images/combos/page_18.png",
+    "image": "images/combos/page_18_left.png",
     "items": [
       {
         "type": "Built-in Oven",
@@ -2257,7 +2257,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 21990,
     "page": 18,
-    "image": "images/combos/page_18.png",
+    "image": "images/combos/page_18_right.png",
     "items": [
       {
         "type": "Built-in Oven",
@@ -2289,7 +2289,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 21990,
     "page": 19,
-    "image": "images/combos/page_19.png",
+    "image": "images/combos/page_19_left.png",
     "items": [
       {
         "type": "Built-in Oven",
@@ -2321,7 +2321,7 @@ const defaultCombos = [
     "freeGift": "Air Fryer",
     "freeGiftMrp": 21990,
     "page": 19,
-    "image": "images/combos/page_19.png",
+    "image": "images/combos/page_19_right.png",
     "items": [
       {
         "type": "Built-in Oven",
