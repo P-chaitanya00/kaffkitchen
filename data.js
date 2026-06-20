@@ -1322,7 +1322,7 @@ const defaultCollections = [
 
 const defaultCombos = [
   {
-    "id": "combo-01",
+    "id": "combo-101",
     "name": "ASHPRO 60DC + HBR 604 A",
     "mrp": 67470,
     "price": 44354,
@@ -1354,7 +1354,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-02",
+    "id": "combo-102",
     "name": "AERO 60BL/RG + CRH604",
     "mrp": 63470,
     "price": 37861,
@@ -1386,7 +1386,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-03",
+    "id": "combo-103",
     "name": "MAINZ SUPER DHC 60 + HBR 603B",
     "mrp": 69970,
     "price": 38887,
@@ -1418,7 +1418,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-04",
+    "id": "combo-104",
     "name": "Molin 60 + NYG64B",
     "mrp": 95570,
     "price": 72167,
@@ -1450,7 +1450,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-05",
+    "id": "combo-105",
     "name": "CASTO 60-DC + BLH 604",
     "mrp": 86270,
     "price": 66659,
@@ -1482,7 +1482,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-06",
+    "id": "combo-106",
     "name": "Molin 75 + ASF784",
     "mrp": 96970,
     "price": 67203,
@@ -1514,7 +1514,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-07",
+    "id": "combo-107",
     "name": "LYNN 75 DC + CRH804",
     "mrp": 71070,
     "price": 46339,
@@ -1546,7 +1546,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-08",
+    "id": "combo-108",
     "name": "VASCO 75DC + INF 804",
     "mrp": 88970,
     "price": 61319,
@@ -1578,7 +1578,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-09",
+    "id": "combo-109",
     "name": "CASTO 75-DC + ASF784",
     "mrp": 95970,
     "price": 67237,
@@ -1610,7 +1610,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-10",
+    "id": "combo-110",
     "name": "ALBURY 75DC + BLHF 804",
     "mrp": 114970,
     "price": 85742,
@@ -1642,7 +1642,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-11",
+    "id": "combo-111",
     "name": "ALBURY(SUPER)75 + MSM 804",
     "mrp": 125970,
     "price": 93693,
@@ -1674,7 +1674,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-12",
+    "id": "combo-112",
     "name": "Molin 90 + HBR 904A",
     "mrp": 85970,
     "price": 57269,
@@ -1706,7 +1706,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-13",
+    "id": "combo-113",
     "name": "Molin 90 + MSM 804",
     "mrp": 117970,
     "price": 84388,
@@ -1738,7 +1738,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-14",
+    "id": "combo-114",
     "name": "LYNN 90 DC + ASF94V",
     "mrp": 111970,
     "price": 70640,
@@ -1770,7 +1770,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-15",
+    "id": "combo-115",
     "name": "LYNN 90 DC + ASF94TM",
     "mrp": 104570,
     "price": 74285,
@@ -1802,7 +1802,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-16",
+    "id": "combo-116",
     "name": "BRANDO 90DC + PRS 804",
     "mrp": 104970,
     "price": 71971,
@@ -1834,7 +1834,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-17",
+    "id": "combo-117",
     "name": "BRANDO 90DC + ASF94M",
     "mrp": 107970,
     "price": 71872,
@@ -1866,7 +1866,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-18",
+    "id": "combo-118",
     "name": "FALCON DX 90 + BLHF 804",
     "mrp": 126970,
     "price": 92012,
@@ -1898,7 +1898,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-19",
+    "id": "combo-119",
     "name": "NEWBURY 90 DC + NYG784G",
     "mrp": 127970,
     "price": 95678,
@@ -1930,7 +1930,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-20",
+    "id": "combo-120",
     "name": "CANARY 90DC + MSM804",
     "mrp": 135970,
     "price": 102897,
@@ -1962,7 +1962,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-21",
+    "id": "combo-121",
     "name": "CANARY 90DC + MSM865",
     "mrp": 146970,
     "price": 111895,
@@ -1994,7 +1994,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-22",
+    "id": "combo-122",
     "name": "ALBURY(SUPER)90 + MSM 94DF",
     "mrp": 130970,
     "price": 99058,
@@ -2026,7 +2026,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-23",
+    "id": "combo-123",
     "name": "CASTO 60-DC + KAB 60",
     "mrp": 137970,
     "price": 101940,
@@ -2058,7 +2058,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-24",
+    "id": "combo-124",
     "name": "FALMARC DHC 90-A + KGM 90",
     "mrp": 229070,
     "price": 191219,
@@ -2090,7 +2090,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-25",
+    "id": "combo-125",
     "name": "OV81ATMN + KB5A",
     "mrp": 187570,
     "price": 156008,
@@ -2122,7 +2122,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-26",
+    "id": "combo-126",
     "name": "OV81TCBL + KMW HN 6-BLK",
     "mrp": 136970,
     "price": 105271,
@@ -2154,7 +2154,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-27",
+    "id": "combo-127",
     "name": "OV 81 GIKFAFR + KMWHN6",
     "mrp": 135970,
     "price": 106971,
@@ -2186,7 +2186,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-28",
+    "id": "combo-128",
     "name": "OV81TCBLAFR + KMWHN6",
     "mrp": 140970,
     "price": 109804,
@@ -2218,7 +2218,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-29",
+    "id": "combo-129",
     "name": "OV81STF13 + KB4A",
     "mrp": 163970,
     "price": 126330,
@@ -2250,7 +2250,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-30",
+    "id": "combo-130",
     "name": "CSOV6 BSN + MW34G6F -B",
     "mrp": 218970,
     "price": 166246,
@@ -2282,7 +2282,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-31",
+    "id": "combo-131",
     "name": "OV72G6F + MW34G6F",
     "mrp": 219470,
     "price": 169774,
@@ -2314,7 +2314,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-32",
+    "id": "combo-132",
     "name": "OV81AMSTF + MW34G6F -B",
     "mrp": 284970,
     "price": 224850,
@@ -2346,7 +2346,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-33",
+    "id": "combo-133",
     "name": "LYNN 90 DC + BLHF804 + OV81TCBLAFR + KMWHN6",
     "mrp": 237950,
     "price": 174116,
@@ -2396,7 +2396,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-34",
+    "id": "combo-134",
     "name": "BRANDO 90DC + MSM 804X + OV81GIKAFR + KMWHN6",
     "mrp": 242950,
     "price": 183350,
@@ -2446,7 +2446,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-35",
+    "id": "combo-135",
     "name": "NEWBURY 90 DC + NYG784G + OV72G6F + MW34G6F",
     "mrp": 321450,
     "price": 248464,
@@ -2496,7 +2496,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-36",
+    "id": "combo-136",
     "name": "BRANDO 90DC + MSM 804X + OV81GIKAFR + KMWHN6 + DWFIBI",
     "mrp": 308240,
     "price": 230091,
@@ -2555,7 +2555,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-37",
+    "id": "combo-137",
     "name": "CANARY 90DC + PRS 804 + OV81ZNSCN + KB5A + DW INTRA + KRF250FFBI",
     "mrp": 612930,
     "price": 483447,
@@ -2617,7 +2617,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-38",
+    "id": "combo-138",
     "name": "CANARY 90 DC (IS) + MSM 804X + OV81ZNSCN + KB5A + DW INTRA + KRF250FFBI",
     "mrp": 661930,
     "price": 524564,
@@ -2679,7 +2679,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-39",
+    "id": "combo-139",
     "name": "TOWNVILLE 90 (IS) + BLHF 865 + OV81AMSTF + MW34G6F -B + DW INTRA + KRF250FFBI",
     "mrp": 810930,
     "price": 645148,
@@ -2743,7 +2743,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-40",
+    "id": "combo-140",
     "name": "FLORA TWIN IS + MARMOR 1104 + CFFBI 6 + OV81AMSTF + MW34G6F -B + DW INTRA + KRF250FFBI",
     "mrp": 1085920,
     "price": 864308,
@@ -2815,7 +2815,7 @@ const defaultCombos = [
     ]
   },
   {
-    "id": "combo-41",
+    "id": "combo-141",
     "name": "ZEBRA 41 (IS) + MSM 604 + CFFBI 6 + OV81AMSTF + MW34G6F -B + DW INTRA + KRF250FFBI",
     "mrp": 1112920,
     "price": 885779,
